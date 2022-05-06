@@ -1,5 +1,5 @@
 import {randomUUID} from 'crypto'
-import {Categories, Inventory, Item, Promotion, Trader} from '../DB/TraderSchema.js'
+import {Categories, Inventory, Item, Promotion, Trader} from '../Schema/traderSchema.js'
 
 
 //Register new trader

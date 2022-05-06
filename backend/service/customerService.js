@@ -1,6 +1,6 @@
 import {randomUUID} from 'crypto'
-import {CartItem, User,WishList,PurchaseItem} from '../DB/userSchema.js'
-import {Item} from "../DB/TraderSchema.js";
+import {CartItem, User,WishList,PurchaseItem} from '../Schema/userSchema.js'
+import {Item} from "../Schema/traderSchema.js";
 
 //Register new user
 export const register = (data) => {
