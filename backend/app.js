@@ -2,8 +2,8 @@ import Koa from 'koa';
 import bodyParser from 'koa-bodyparser';
 import cors from 'koajs-cors';
 
-import traderRoutes from './paths/traderRoute.js'
-import userRoutes from './paths/customerRoute.js'
+import traderRoutes from './paths/traderPath.js'
+import userRoutes from './paths/customerPath.js'
 
 const app = new Koa;
 app.use(cors());
