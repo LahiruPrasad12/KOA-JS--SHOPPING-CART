@@ -38393,31 +38393,15 @@ const RegisterCustomer = ()=>{
     const [lName, setlName] = _react.useState("");
     const [mail, setmail] = _react.useState("");
     const [phone, setphone] = _react.useState("");
-    const [nic, setnic] = _react.useState("");
     const registerUser = async ()=>{
         try {
-            if (!fName || !lName || !phone || !nic || !mail) _soloalertDefault.default.alert({
-                title: "Oops!",
-                body: "Please fill all field",
-                icon: "error",
-                theme: "dark",
-                useTransparency: true,
-                onOk: function() {}
-            });
-            else if (!_validatorDefault.default.isEmail(mail)) _soloalertDefault.default.alert({
-                title: "Oops!",
-                body: "Please enter valid mail address",
-                icon: "error",
-                theme: "dark",
-                useTransparency: true,
-                onOk: function() {}
-            });
+            if (!fName || !lName || !phone || !mail) alert('All fill is required');
+            else if (!_validatorDefault.default.isEmail(mail)) alert('Email is required');
             else {
                 const newUser = {
                     fName,
                     lName,
                     phone,
-                    nic,
                     mail
                 };
                 const data = (await _axiosDefault.default.post("http://localhost:3000/customer", newUser)).data;
@@ -38443,12 +38427,12 @@ const RegisterCustomer = ()=>{
                         required: true
                     }, void 0, false, {
                         fileName: "src/components/customer/registerCustomer.jsx",
-                        lineNumber: 59,
+                        lineNumber: 40,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/customer/registerCustomer.jsx",
-                    lineNumber: 58,
+                    lineNumber: 39,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -38463,12 +38447,12 @@ const RegisterCustomer = ()=>{
                         required: true
                     }, void 0, false, {
                         fileName: "src/components/customer/registerCustomer.jsx",
-                        lineNumber: 63,
+                        lineNumber: 44,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/customer/registerCustomer.jsx",
-                    lineNumber: 62,
+                    lineNumber: 43,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -38483,12 +38467,12 @@ const RegisterCustomer = ()=>{
                         required: true
                     }, void 0, false, {
                         fileName: "src/components/customer/registerCustomer.jsx",
-                        lineNumber: 67,
+                        lineNumber: 48,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/customer/registerCustomer.jsx",
-                    lineNumber: 66,
+                    lineNumber: 47,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -38503,32 +38487,12 @@ const RegisterCustomer = ()=>{
                         required: true
                     }, void 0, false, {
                         fileName: "src/components/customer/registerCustomer.jsx",
-                        lineNumber: 71,
+                        lineNumber: 52,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/customer/registerCustomer.jsx",
-                    lineNumber: 70,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "col-md-4 mt-3",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                        type: "text",
-                        className: "form-control",
-                        placeholder: "Enter NIC",
-                        onChange: (e)=>{
-                            setnic(e.target.value);
-                        },
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/components/customer/registerCustomer.jsx",
-                        lineNumber: 75,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/customer/registerCustomer.jsx",
-                    lineNumber: 74,
+                    lineNumber: 51,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -38542,7 +38506,7 @@ const RegisterCustomer = ()=>{
                             children: isLoading ? 'Sending..' : 'RegisterCustomer user'
                         }, void 0, false, {
                             fileName: "src/components/customer/registerCustomer.jsx",
-                            lineNumber: 79,
+                            lineNumber: 56,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -38551,28 +38515,28 @@ const RegisterCustomer = ()=>{
                             children: "Close"
                         }, void 0, false, {
                             fileName: "src/components/customer/registerCustomer.jsx",
-                            lineNumber: 80,
+                            lineNumber: 57,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/customer/registerCustomer.jsx",
-                    lineNumber: 78,
+                    lineNumber: 55,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/customer/registerCustomer.jsx",
-            lineNumber: 57,
+            lineNumber: 38,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/customer/registerCustomer.jsx",
-        lineNumber: 56,
+        lineNumber: 37,
         columnNumber: 9
     }, undefined);
 };
-_s(RegisterCustomer, "D6OGiXJvRiW1VELx+dMt/meVaJU=");
+_s(RegisterCustomer, "NUsbLagrQq16QHRdCczEp7GcNio=");
 _c = RegisterCustomer;
 exports.default = RegisterCustomer;
 var _c;

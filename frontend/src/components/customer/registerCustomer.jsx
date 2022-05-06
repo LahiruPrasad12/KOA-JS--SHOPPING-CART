@@ -9,37 +9,18 @@ const RegisterCustomer = () => {
     const [lName, setlName] = useState("");
     const [mail, setmail] = useState("");
     const [phone, setphone] = useState("");
-    const [nic, setnic] = useState("");
     const registerUser = async()=>{
 
         try{
-            if(!fName || !lName || !phone || !nic || !mail){
-                SoloAlert.alert({
-                    title: "Oops!",
-                    body: "Please fill all field",
-                    icon: "error",
-                    theme: "dark",
-                    useTransparency: true,
-                    onOk: function () {
-
-                    },
-                });
+            if(!fName || !lName || !phone  || !mail){
+                alert('All fill is required')
             }else if(!validation.isEmail(mail)){
-                SoloAlert.alert({
-                    title: "Oops!",
-                    body: "Please enter valid mail address",
-                    icon: "error",
-                    theme: "dark",
-                    useTransparency: true,
-                    onOk: function () {
-
-                    },
-                });
+               alert('Email is required')
             }
 
             else {
                 const newUser = {
-                    fName, lName, phone, nic, mail
+                    fName, lName, phone, mail
                 }
                 const data = (await axios.post("http://localhost:3000/customer", newUser)).data
                 localStorage.setItem('user_id',JSON.stringify(data.Id))
@@ -70,10 +51,6 @@ const RegisterCustomer = () => {
                 <div className="col-md-4 mt-3">
                     <input type="number" className="form-control" placeholder={"Enter phone"}
                            onChange={(e) => { setphone(e.target.value) }}  required/>
-                </div>
-                <div className="col-md-4 mt-3">
-                    <input type="text" className="form-control" placeholder={"Enter NIC"}
-                           onChange={(e) => { setnic(e.target.value) }}  required/>
                 </div>
                 <div className="p-1">
                     <button type="button" className="btn btn-primary" onClick={registerUser} disabled={isLoading} >{isLoading ? 'Sending..' : 'RegisterCustomer user'}</button>
