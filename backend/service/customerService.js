@@ -1,5 +1,8 @@
 import {randomUUID} from 'crypto'
-import {Cart, User,WishList,PurchaseItem} from '../Schema/userSchema.js'
+const User = new Map()
+const Cart = new Map()
+const WishList = new Map()
+const PurchaseItem = new Map()
 import {Item} from "../Schema/traderSchema.js";
 
 //Register new user
@@ -77,6 +80,6 @@ export const getWishItem = (id) => {
 //purchased item
 export const purchaseItem = (data) => {
         const new_purchased_item = { Id: randomUUID(), data }
-        User.set(new_purchased_item.Id, new_purchased_item)
+    PurchaseItem.set(new_purchased_item.Id, new_purchased_item)
         return new_purchased_item;
 }
