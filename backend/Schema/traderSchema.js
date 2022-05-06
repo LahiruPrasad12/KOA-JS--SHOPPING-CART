@@ -2,7 +2,6 @@ export const Trader = new Map()
 
 export const Item = new Map();
 export const Categories = [
-    "Business",
     "Boys",
     "Girls"
 ]
