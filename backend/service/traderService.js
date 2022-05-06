@@ -1,5 +1,15 @@
 import {randomUUID} from 'crypto'
-import {Categories, Inventory, Item, Promotion, Trader} from '../Schema/traderSchema.js'
+const Trader = new Map()
+
+const Item = new Map();
+const Categories = [
+    "Boys",
+    "Girls"
+]
+
+const Inventory = new Map();
+
+const Promotion = new Map()
 
 
 //Register new trader

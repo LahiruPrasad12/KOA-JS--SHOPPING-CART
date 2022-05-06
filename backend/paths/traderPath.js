@@ -1,7 +1,6 @@
 import Router from '@koa/router';
 import { register,getOnePromotion, getAll, addItem, update, getAllItems,getOneItem,viewInventory,getAllCategories,addPromotion,viewPromotion,getTraderItem } from '../service/traderService.js'
-import AppError from '../utils/AppError.js';
-import respond from '../utils/respond.js'
+
 
 const traderRouter = new Router({
     prefix: '/traders'

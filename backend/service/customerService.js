@@ -1,9 +1,11 @@
 import {randomUUID} from 'crypto'
+
+//DB
 const User = new Map()
 const Cart = new Map()
 const WishList = new Map()
 const PurchaseItem = new Map()
-import {Item} from "../Schema/traderSchema.js";
+const Item = new Map();
 
 //Register new user
 export const register = (data) => {
