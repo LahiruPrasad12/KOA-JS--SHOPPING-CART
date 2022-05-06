@@ -1,19 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from './home.jsx'
-import CusRegister from './components/customer/pages/register'
-import AllItems from './components/customer/pages/viewItem'
+import CusRegister from './components/customer/views/register'
+import AllItems from './components/customer/views/viewItem'
 import CustomerSideNav from './navbar/customeSidenav'
-import WishList from './components/customer/pages/viewWishList'
-import Cart from './components/customer/pages/viewCart'
-import TraderRegister from './components/traders/pages/register'
-import AddItem from './components/traders/pages/addItem'
+import WishList from './components/customer/views/viewWishList'
+import Cart from './components/customer/views/viewCart'
+import TraderRegister from './components/traders/views/register'
+import AddItem from './components/traders/views/addItem'
 import TraderSideNav from './navbar/traderSideNav'
-import ViewInventory from './components/traders/pages/ViewInvventory'
-import ViewCustomer from './components/traders/pages/ViewCustomer'
-import UpdateItem from './components/traders/pages/updateItem'
-import AddPromotion from './components/traders/pages/AddPromotion'
-import ViewPromotion from './components/traders/pages/viewPromotion'
+import ViewInventory from './components/traders/views/ViewInvventory'
+import ViewCustomer from './components/traders/views/ViewCustomer'
+import UpdateItem from './components/traders/views/updateItem'
+import AddPromotion from './components/traders/views/AddPromotion'
+import ViewPromotion from './components/traders/views/viewPromotion'
 function App() {
     return (
         <BrowserRouter>
