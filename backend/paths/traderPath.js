@@ -1,115 +1,128 @@
 import Router from '@koa/router';
-import { register,getOnePromotion, getAll, addItem, update, getAllItems,getOneItem,viewInventory,getAllCategories,addPromotion,viewPromotion,getTraderItem } from '../service/traderService.js'
+import {
+    register,
+    getOnePromotion,
+    getAll,
+    add_item,
+    update,
+    getOneItem,
+    viewInventory,
+    getAllCategories,
+    viewPromotion,
+    get_trader_item,
+    get_all_item, add_promotion
+} from '../service/traderService.js'
 
 
-const traderRouter = new Router({
+const tradePath = new Router({
     prefix: '/traders'
 })
 
 
 //Register User
-traderRouter.post('/', (ctx) => {
+tradePath.post('/', (ctx) => {
     try {
         const data = ctx.request.body
-        const res = register(data)
-        respond(res, 201, ctx)
+        ctx.body = register(data)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 201;
     } catch (e) {
 
     }
 })
 
 //Get all traders
-traderRouter.get('/', (ctx) => {
-    const res = getAll()
-    respond(res,200,ctx)
+tradePath.get('/', (ctx) => {
+    ctx.body  = getAll()
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 //Add item
-traderRouter.post('/items', (ctx) => {
-    try {
+tradePath.post('/items', (ctx) => {
+
         const data = ctx.request.body
-        const res = addItem(data)
-        respond(res, 201, ctx)
+        ctx.body  = add_item(data)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 201;
 
-    } catch (e) {
-
-    }
 })
 
 
 //Get all items
-traderRouter.get('/items', (ctx) => {
-    const res = getAllItems()
-    respond(res,200,ctx)
+tradePath.get('/items', (ctx) => {
+    ctx.body = get_all_item()
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 //Get all relevant trader item
-traderRouter.get('/items/trader/:id', (ctx) => {
+tradePath.get('/items/trader/:id', (ctx) => {
     const id = ctx.params.id
-    const res = getTraderItem(id)
-    respond(res,200,ctx)
+    ctx.body = get_trader_item(id)
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 
 //get one item
-traderRouter.get('/items/:id',(ctx)=>{
+tradePath.get('/items/:id',(ctx)=>{
     const id = ctx.params.id
-    const res = getOneItem(id)
-    respond(res,200,ctx)
+    ctx.body = getOneItem(id)
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 
 
 
 //update item
-traderRouter.put('/items/:id', (ctx) => {
-    try {
+tradePath.put('/items/:id', (ctx) => {
         const id = ctx.params.id
         const data = ctx.request.body
-        const res = update(id, data)
-        respond(res, 201, ctx)
+        ctx.body = update(id, data)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 201;
 
-    } catch (e) {
-
-    }
 })
 
 //Get all items
-traderRouter.get('/inventory', (ctx) => {
-    const res = viewInventory()
-    respond(res,200,ctx)
+tradePath.get('/inventory', (ctx) => {
+    ctx.body = viewInventory()
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 //Get all items
-traderRouter.get('/categories', (ctx) => {
-    const res = getAllCategories()
-    respond(res,200,ctx)
+tradePath.get('/categories', (ctx) => {
+    ctx.body = getAllCategories()
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 //Add promotion
-traderRouter.post('/promotion', (ctx) => {
-    try {
+tradePath.post('/promotion', (ctx) => {
         const data = ctx.request.body
-        const res = addPromotion(data)
-        respond(res, 201, ctx)
+        ctx.body = add_promotion(data)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 201;
 
-    } catch (e) {
-
-    }
 })
 
 //Get all promotions
-traderRouter.get('/promotion/:id', (ctx) => {
+tradePath.get('/promotion/:id', (ctx) => {
     const id = ctx.params.id
-    const res = viewPromotion(id)
-    respond(res,200,ctx)
+    ctx.body = viewPromotion(id)
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 //get one promotion
-traderRouter.get('/promotion-one/:id',(ctx)=>{
+tradePath.get('/promotion-one/:id',(ctx)=>{
     const id = ctx.params.id
-    const res = getOnePromotion(id)
-    respond(res,200,ctx)
+    ctx.body = getOnePromotion(id)
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 export default traderRouter;

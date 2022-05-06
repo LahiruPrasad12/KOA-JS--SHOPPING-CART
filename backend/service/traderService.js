@@ -14,25 +14,20 @@ const Promotion = new Map()
 
 //Register new trader
 export const register = (data) => {
-    try {
         const new_trader = { Id: randomUUID(), data }
         Trader.set(new_trader.Id, new_trader)
         return new_trader;
-    } catch (e) {
-        throw new Error(e.message)
-    }
+
 }
 
 
 //Add new item
-export const addItem = (data) => {
-    try {
+export const add_item = (data) => {
         const new_item = { Id: randomUUID(), data }
         Item.set(new_item.Id, new_item)
-        console.log(data.category)
-        // update inventory
+
         let inventory = Inventory.get(data.category);
-        console.log(inventory)
+
         if(!inventory){
             let count = {
                 count:1
@@ -45,76 +40,56 @@ export const addItem = (data) => {
             Inventory.set(data.category,count)
         }
         return new_item;
-    } catch (e) {
-        throw new Error(e.message)
-    }
 }
 
 //get all items
-export const getAllItems = (data) => {
-    try {
+export const get_all_item = (data) => {
         return [...Item.values()]
-    } catch (e) {
-        throw new Error(e.message)
-    }
+
 }
 
 //get all items
-export const getTraderItem = (id) => {
-    try {
+export const get_trader_item = (id) => {
         let items = [...Item.values()]
         let data = []
         items.forEach((value,key)=>{
-            console.log(value.data.trader_id)
             if(value.data.trader_id === id){
                 data.push(value)
             }
         })
-        // console.log(id)
+
         return data
-    } catch (e) {
-        throw new Error(e.message)
-    }
+
 }
 
 
 // update item
 export const update = (Id, data) => {
-    try {
         if (!Item.has(Id)) {
             throw new Error(`Not found ${Id}`)
         }
         const item = { Id, data }
         Item.set(item.Id, item)
         return item
-    } catch (e) {
-
-    }
 }
 
 
 //get one item
 export const getOneItem = (id) => {
-    try {
         const item = Item.get(id)
         if (item) {
             return item;
         }
-    } catch (e) {
-
-    }
 }
 
 
 //Add  promotion
-export const addPromotion = (data) => {
-    try {
+export const add_promotion = (data) => {
+
         const new_promotion = { Id: data.item_id, data }
         Promotion.set(new_promotion.Id, new_promotion)
         return new_promotion;
-    } catch (e) {
-        throw new Error(e.message)
-    }
+
 }
 
 
