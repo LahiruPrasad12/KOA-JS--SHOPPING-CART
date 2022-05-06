@@ -1,0 +1,19 @@
+{
+  "name": "koa-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "koajs-cors": "^1.0.9",
+    "nodemon": "^2.0.16"
+  }
+}
