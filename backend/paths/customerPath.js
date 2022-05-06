@@ -1,18 +1,26 @@
 import Router from '@koa/router';
-import {register, getAllUsers,addItemToCart,getCart,addOrRemoveItemToWishlist,getWishItem,purchaseItem} from "../service/customerService.js";
-import respond from "../utils/respond.js";
-import traderRouter from "./traderPath.js";
-
-const userRouter = new Router({
+const cusPath = new Router({
     prefix: '/customer'
 })
 
+
+import {
+    add_to_cart,
+    addOrRemoveItemToWishlist,
+    get_all_customers,
+    getCart,
+    getWishItem,
+    purchaseItem,
+    register
+} from "../service/customerService.js";
+
 //Register User
-userRouter.post('/', (ctx) => {
+cusPath.post('/', (ctx) => {
     try {
         const data = ctx.request.body
-        const res = register(data)
-        respond(res, 201, ctx)
+        ctx.body = register(data)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 201;
     } catch (e) {
 
     }
@@ -20,70 +28,63 @@ userRouter.post('/', (ctx) => {
 
 
 //Get all customer
-userRouter.get('/', (ctx) => {
-    const res = getAllUsers()
-    respond(res,200,ctx)
+cusPath.get('/', (ctx) => {
+    ctx.body = get_all_customers()
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
 })
 
 //Add item to cart
-userRouter.post('/cart-item', (ctx) => {
-    try {
+cusPath.post('/cart-item', (ctx) => {
         const data = ctx.request.body
         if(!data.user_id){
-            respond('user id is required', 400, ctx)
+            throw Error('unauthorized user')
         }
         const id = data.user_id
-        const res = addItemToCart(id,data)
-        respond(res, 201, ctx)
-    } catch (e) {
-        respond(e.message, 400, ctx)
-    }
+        ctx.body = add_to_cart(id,data)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 201;
+
 })
 
-//Get all cart
-userRouter.get('/cart-item/:id', (ctx) => {
-    try{
+
+cusPath.get('/cart-item/:id', (ctx) => {
+
         const id = ctx.params.id
-        const res = getCart(id)
-        respond(res,200,ctx)
-    }catch (e){
-
-    }
+        ctx.body = getCart(id)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 200;
 })
 
 
-//Add or remove item to wishlist
-userRouter.post('/wish-list', (ctx) => {
-    try {
+
+cusPath.post('/wish-list', (ctx) => {
         const data = ctx.request.body
         if(!data.user_id){
-            respond('user id is required', 400, ctx)
+            throw Error('unauthorized user')
+
         }
-        const res = addOrRemoveItemToWishlist(data)
-        respond(res, 201, ctx)
-    } catch (e) {
-        respond(e.message, 400, ctx)
-    }
+    ctx.body = addOrRemoveItemToWishlist(data)
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 201;
+
 })
 
-userRouter.get('/wish-list/:id', (ctx) => {
-    try{
+cusPath.get('/wish-list/:id', (ctx) => {
+
         const id = ctx.params.id
-        const res = getWishItem(id)
-        respond(res,200,ctx)
-    }catch (e){
+    ctx.body = getWishItem(id)
+    ctx.set('Content-Type', 'Application.json')
+    ctx.status = 200;
 
-    }
 })
 
-userRouter.post('/perched-item', (ctx) => {
-    try{
+cusPath.post('/perched-item', (ctx) => {
         const data = ctx.request.body
-        const res = purchaseItem(data)
-        respond(res,200,ctx)
-    }catch (e){
+        ctx.body = purchaseItem(data)
+        ctx.set('Content-Type', 'Application.json')
+        ctx.status = 200;
 
-    }
 })
 
-export default userRouter;
+export default cusPath;
