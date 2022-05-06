@@ -1,5 +1,5 @@
 import Router from '@koa/router';
-import {register, getAllUsers,addItemToCart,getCart,addOrRemoveItemToWishlist,getWishItem,purchaseItem} from "../service/customerController.js";
+import {register, getAllUsers,addItemToCart,getCart,addOrRemoveItemToWishlist,getWishItem,purchaseItem} from "../service/customerService.js";
 import respond from "../utils/respond.js";
 import traderRouter from "./traderPath.js";
 
