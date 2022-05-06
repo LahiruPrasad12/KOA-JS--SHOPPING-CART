@@ -22651,32 +22651,32 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _homeJsx = require("./home.jsx");
 var _homeJsxDefault = parcelHelpers.interopDefault(_homeJsx);
-var _register = require("./components/customer/views/register");
-var _registerDefault = parcelHelpers.interopDefault(_register);
-var _viewItem = require("./components/customer/views/viewItem");
-var _viewItemDefault = parcelHelpers.interopDefault(_viewItem);
+var _registerCustomer = require("./components/customer/registerCustomer");
+var _registerCustomerDefault = parcelHelpers.interopDefault(_registerCustomer);
+var _viewAllItem = require("./components/customer/ViewAllItem");
+var _viewAllItemDefault = parcelHelpers.interopDefault(_viewAllItem);
 var _customeSidenav = require("./navbar/customeSidenav");
 var _customeSidenavDefault = parcelHelpers.interopDefault(_customeSidenav);
-var _viewWishList = require("./components/customer/views/viewWishList");
-var _viewWishListDefault = parcelHelpers.interopDefault(_viewWishList);
-var _viewCart = require("./components/customer/views/viewCart");
+var _viewFavouriteList = require("./components/customer/ViewFavouriteList");
+var _viewFavouriteListDefault = parcelHelpers.interopDefault(_viewFavouriteList);
+var _viewCart = require("./components/customer/ViewCart");
 var _viewCartDefault = parcelHelpers.interopDefault(_viewCart);
-var _register1 = require("./components/traders/views/register");
-var _registerDefault1 = parcelHelpers.interopDefault(_register1);
-var _addItem = require("./components/traders/views/addItem");
+var _register = require("./components/traders/register");
+var _registerDefault = parcelHelpers.interopDefault(_register);
+var _addItem = require("./components/traders/addItem");
 var _addItemDefault = parcelHelpers.interopDefault(_addItem);
 var _traderSideNav = require("./navbar/traderSideNav");
 var _traderSideNavDefault = parcelHelpers.interopDefault(_traderSideNav);
-var _viewInvventory = require("./components/traders/views/ViewInvventory");
-var _viewInvventoryDefault = parcelHelpers.interopDefault(_viewInvventory);
-var _viewCustomer = require("./components/traders/views/ViewCustomer");
-var _viewCustomerDefault = parcelHelpers.interopDefault(_viewCustomer);
-var _updateItem = require("./components/traders/views/updateItem");
-var _updateItemDefault = parcelHelpers.interopDefault(_updateItem);
-var _addPromotion = require("./components/traders/views/AddPromotion");
-var _addPromotionDefault = parcelHelpers.interopDefault(_addPromotion);
-var _viewPromotion = require("./components/traders/views/viewPromotion");
-var _viewPromotionDefault = parcelHelpers.interopDefault(_viewPromotion);
+var _iventoryView = require("./components/traders/IventoryView");
+var _iventoryViewDefault = parcelHelpers.interopDefault(_iventoryView);
+var _viewCustomers = require("./components/traders/ViewCustomers");
+var _viewCustomersDefault = parcelHelpers.interopDefault(_viewCustomers);
+var _updateMyItem = require("./components/traders/UpdateMyItem");
+var _updateMyItemDefault = parcelHelpers.interopDefault(_updateMyItem);
+var _newPromotion = require("./components/traders/NewPromotion");
+var _newPromotionDefault = parcelHelpers.interopDefault(_newPromotion);
+var _viewMyPromotions = require("./components/traders/ViewMyPromotions");
+var _viewMyPromotionsDefault = parcelHelpers.interopDefault(_viewMyPromotions);
 function App() {
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.BrowserRouter, {
         children: [
@@ -22696,7 +22696,7 @@ function App() {
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
                 exact: true,
                 path: "/customer/register",
-                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registerDefault.default, {}, void 0, false, {
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registerCustomerDefault.default, {}, void 0, false, {
                     fileName: "src/App.jsx",
                     lineNumber: 24,
                     columnNumber: 54
@@ -22715,7 +22715,7 @@ function App() {
                         lineNumber: 25,
                         columnNumber: 56
                     }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewItemDefault.default, {}, void 0, false, {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewAllItemDefault.default, {}, void 0, false, {
                         fileName: "src/App.jsx",
                         lineNumber: 25,
                         columnNumber: 74
@@ -22735,7 +22735,7 @@ function App() {
                         lineNumber: 26,
                         columnNumber: 60
                     }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewWishListDefault.default, {}, void 0, false, {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewFavouriteListDefault.default, {}, void 0, false, {
                         fileName: "src/App.jsx",
                         lineNumber: 26,
                         columnNumber: 78
@@ -22769,7 +22769,7 @@ function App() {
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Route, {
                 exact: true,
                 path: "/trader/register",
-                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registerDefault1.default, {}, void 0, false, {
+                children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_registerDefault.default, {}, void 0, false, {
                     fileName: "src/App.jsx",
                     lineNumber: 30,
                     columnNumber: 52
@@ -22808,7 +22808,7 @@ function App() {
                         lineNumber: 32,
                         columnNumber: 53
                     }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_updateItemDefault.default, {}, void 0, false, {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_updateMyItemDefault.default, {}, void 0, false, {
                         fileName: "src/App.jsx",
                         lineNumber: 32,
                         columnNumber: 69
@@ -22828,7 +22828,7 @@ function App() {
                         lineNumber: 33,
                         columnNumber: 58
                     }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewInvventoryDefault.default, {}, void 0, false, {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_iventoryViewDefault.default, {}, void 0, false, {
                         fileName: "src/App.jsx",
                         lineNumber: 33,
                         columnNumber: 74
@@ -22848,7 +22848,7 @@ function App() {
                         lineNumber: 34,
                         columnNumber: 57
                     }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewCustomerDefault.default, {}, void 0, false, {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewCustomersDefault.default, {}, void 0, false, {
                         fileName: "src/App.jsx",
                         lineNumber: 34,
                         columnNumber: 73
@@ -22868,7 +22868,7 @@ function App() {
                         lineNumber: 35,
                         columnNumber: 57
                     }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_addPromotionDefault.default, {}, void 0, false, {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_newPromotionDefault.default, {}, void 0, false, {
                         fileName: "src/App.jsx",
                         lineNumber: 35,
                         columnNumber: 73
@@ -22888,7 +22888,7 @@ function App() {
                         lineNumber: 36,
                         columnNumber: 58
                     }, this),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewPromotionDefault.default, {}, void 0, false, {
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_viewMyPromotionsDefault.default, {}, void 0, false, {
                         fileName: "src/App.jsx",
                         lineNumber: 36,
                         columnNumber: 74
@@ -22916,7 +22916,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./home.jsx":"hdEcM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./navbar/customeSidenav":"6JHWP","./navbar/traderSideNav":"6ginU","./components/customer/views/register":"e2VVZ","./components/customer/views/viewItem":"68eQc","./components/customer/views/viewWishList":"466ke","./components/customer/views/viewCart":"7MWI3","./components/traders/views/register":"iPNYg","./components/traders/views/addItem":"gUWBt","./components/traders/views/ViewInvventory":"6wcRp","./components/traders/views/ViewCustomer":"leqaP","./components/traders/views/updateItem":"beWHC","./components/traders/views/AddPromotion":"7bBjS","./components/traders/views/viewPromotion":"98r3k"}],"cHIiW":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./home.jsx":"hdEcM","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./navbar/customeSidenav":"6JHWP","./navbar/traderSideNav":"6ginU","./components/traders/register":"cbwNy","./components/traders/addItem":"9O6Ud","./components/customer/registerCustomer":"gIF5Q","./components/customer/ViewAllItem":"eIWq5","./components/customer/ViewFavouriteList":"l9uAV","./components/customer/ViewCart":"eQToi","./components/traders/IventoryView":"918IG","./components/traders/ViewCustomers":"jzgRi","./components/traders/UpdateMyItem":"g4l9c","./components/traders/NewPromotion":"fR0NP","./components/traders/ViewMyPromotions":"L87X4"}],"cHIiW":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>_reactRouter.MemoryRouter
@@ -30242,11 +30242,11 @@ $RefreshReg$(_c, "TraderSideNav");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./customer.css":"a79Rs","react-router-dom":"cHIiW","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"a79Rs":[function() {},{}],"e2VVZ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d1cf = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./customer.css":"a79Rs","react-router-dom":"cHIiW","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"a79Rs":[function() {},{}],"cbwNy":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8b56 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d1cf.prelude(module);
+$parcel$ReactRefreshHelpers$8b56.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -30271,6 +30271,7 @@ const Register = ()=>{
     const [nic, setnic] = _react.useState("");
     const registerUser = async ()=>{
         try {
+            setLoading(true);
             if (!fName || !lName || !phone || !nic || !mail) _soloalertDefault.default.alert({
                 title: "Oops!",
                 body: "Please fill all field",
@@ -30288,17 +30289,18 @@ const Register = ()=>{
                 onOk: function() {}
             });
             else {
-                const newUser = {
+                const newTrader = {
                     fName,
                     lName,
                     phone,
                     nic,
                     mail
                 };
-                const data = (await _axiosDefault.default.post("http://localhost:3000/customer", newUser)).data;
-                localStorage.setItem('user_id', JSON.stringify(data.Id));
-                window.location = '/customer/view-items';
+                const data = (await _axiosDefault.default.post("http://localhost:3000/traders", newTrader)).data;
+                localStorage.setItem('trader_id', JSON.stringify(data.Id));
+                window.location = '/trader/add-new-item';
             }
+            setLoading(false);
         } catch (e) {}
     };
     return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30317,13 +30319,13 @@ const Register = ()=>{
                         },
                         required: true
                     }, void 0, false, {
-                        fileName: "src/components/customer/views/register.jsx",
-                        lineNumber: 59,
+                        fileName: "src/components/traders/register.jsx",
+                        lineNumber: 60,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/customer/views/register.jsx",
-                    lineNumber: 58,
+                    fileName: "src/components/traders/register.jsx",
+                    lineNumber: 59,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30337,13 +30339,13 @@ const Register = ()=>{
                         },
                         required: true
                     }, void 0, false, {
-                        fileName: "src/components/customer/views/register.jsx",
-                        lineNumber: 63,
+                        fileName: "src/components/traders/register.jsx",
+                        lineNumber: 64,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/customer/views/register.jsx",
-                    lineNumber: 62,
+                    fileName: "src/components/traders/register.jsx",
+                    lineNumber: 63,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30357,13 +30359,13 @@ const Register = ()=>{
                         },
                         required: true
                     }, void 0, false, {
-                        fileName: "src/components/customer/views/register.jsx",
-                        lineNumber: 67,
+                        fileName: "src/components/traders/register.jsx",
+                        lineNumber: 68,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/customer/views/register.jsx",
-                    lineNumber: 66,
+                    fileName: "src/components/traders/register.jsx",
+                    lineNumber: 67,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30377,13 +30379,13 @@ const Register = ()=>{
                         },
                         required: true
                     }, void 0, false, {
-                        fileName: "src/components/customer/views/register.jsx",
-                        lineNumber: 71,
+                        fileName: "src/components/traders/register.jsx",
+                        lineNumber: 72,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/customer/views/register.jsx",
-                    lineNumber: 70,
+                    fileName: "src/components/traders/register.jsx",
+                    lineNumber: 71,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30397,13 +30399,13 @@ const Register = ()=>{
                         },
                         required: true
                     }, void 0, false, {
-                        fileName: "src/components/customer/views/register.jsx",
-                        lineNumber: 75,
+                        fileName: "src/components/traders/register.jsx",
+                        lineNumber: 76,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/customer/views/register.jsx",
-                    lineNumber: 74,
+                    fileName: "src/components/traders/register.jsx",
+                    lineNumber: 75,
                     columnNumber: 17
                 }, undefined),
                 /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
@@ -30414,10 +30416,10 @@ const Register = ()=>{
                             className: "btn btn-primary",
                             onClick: registerUser,
                             disabled: isLoading,
-                            children: isLoading ? 'Sending..' : 'Register user'
+                            children: isLoading ? 'Sending..' : 'RegisterCustomer Trader'
                         }, void 0, false, {
-                            fileName: "src/components/customer/views/register.jsx",
-                            lineNumber: 79,
+                            fileName: "src/components/traders/register.jsx",
+                            lineNumber: 80,
                             columnNumber: 21
                         }, undefined),
                         /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
@@ -30425,25 +30427,25 @@ const Register = ()=>{
                             className: "btn btn-secondary",
                             children: "Close"
                         }, void 0, false, {
-                            fileName: "src/components/customer/views/register.jsx",
-                            lineNumber: 80,
+                            fileName: "src/components/traders/register.jsx",
+                            lineNumber: 81,
                             columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/customer/views/register.jsx",
-                    lineNumber: 78,
+                    fileName: "src/components/traders/register.jsx",
+                    lineNumber: 79,
                     columnNumber: 17
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/components/customer/views/register.jsx",
-            lineNumber: 57,
+            fileName: "src/components/traders/register.jsx",
+            lineNumber: 58,
             columnNumber: 13
         }, undefined)
     }, void 0, false, {
-        fileName: "src/components/customer/views/register.jsx",
-        lineNumber: 56,
+        fileName: "src/components/traders/register.jsx",
+        lineNumber: 57,
         columnNumber: 9
     }, undefined);
 };
@@ -30453,7 +30455,7 @@ exports.default = Register;
 var _c;
 $RefreshReg$(_c, "Register");
 
-  $parcel$ReactRefreshHelpers$d1cf.postlude(module);
+  $parcel$ReactRefreshHelpers$8b56.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -38148,11 +38150,11 @@ function isVAT(str, countryCode) {
     return SoloAlert;
 });
 
-},{}],"68eQc":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$28b9 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{}],"9O6Ud":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$802b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$28b9.prelude(module);
+$parcel$ReactRefreshHelpers$802b.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -38162,11 +38164,444 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _validator = require("validator");
+var _validatorDefault = parcelHelpers.interopDefault(_validator);
 var _soloalert = require("soloalert");
 var _soloalertDefault = parcelHelpers.interopDefault(_soloalert);
 var _s = $RefreshSig$();
-const ViewItem = ()=>{
+const AddItem = ()=>{
+    _s();
+    const [isLoading, setLoading] = _react.useState(false);
+    const [name, setName] = _react.useState("");
+    const [category1, setCategory] = _react.useState("");
+    const [price, setPrice] = _react.useState("");
+    const [categoryList, setCategoryList] = _react.useState([]);
+    const trader_id = JSON.parse(localStorage.getItem('trader_id'));
+    _react.useEffect(async ()=>{
+        async function getCategory() {
+            const data = (await _axiosDefault.default.get(`http://localhost:3000/traders/categories`)).data;
+            console.log(data);
+            setCategoryList(data);
+        }
+        await getCategory();
+    }, []);
+    const AddNewItem = async ()=>{
+        try {
+            setLoading(true);
+            if (!price || !name || !category1) _soloalertDefault.default.alert({
+                title: "Oops!",
+                body: "Please fill all fields",
+                icon: "error",
+                theme: "dark",
+                useTransparency: true,
+                onOk: function() {}
+            });
+            else {
+                const newItem = {
+                    category: category1,
+                    name,
+                    price,
+                    trader_id
+                };
+                const data = (await _axiosDefault.default.post("http://localhost:3000/traders/items", newItem)).data;
+                _soloalertDefault.default.alert({
+                    title: "Oops!",
+                    body: "Item Added Successfully",
+                    icon: "success",
+                    theme: "dark",
+                    useTransparency: true,
+                    onOk: function() {}
+                });
+            }
+            setLoading(false);
+        } catch (e) {}
+    };
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "content mt-5",
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
+                children: "ADD-NEW-ITEM"
+            }, void 0, false, {
+                fileName: "src/components/traders/addItem.jsx",
+                lineNumber: 64,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
+                fileName: "src/components/traders/addItem.jsx",
+                lineNumber: 64,
+                columnNumber: 34
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+                className: "mt-5",
+                children: [
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "col-md-4 mt-5",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                            type: "text",
+                            className: "form-control",
+                            placeholder: "Enter name",
+                            onChange: (e)=>{
+                                setName(e.target.value);
+                            },
+                            required: true
+                        }, void 0, false, {
+                            fileName: "src/components/traders/addItem.jsx",
+                            lineNumber: 67,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/traders/addItem.jsx",
+                        lineNumber: 66,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "col-md-4 mt-3",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                            type: "number",
+                            className: "form-control",
+                            placeholder: "Enter price",
+                            onChange: (e)=>{
+                                setPrice(e.target.value);
+                            },
+                            required: true
+                        }, void 0, false, {
+                            fileName: "src/components/traders/addItem.jsx",
+                            lineNumber: 71,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/traders/addItem.jsx",
+                        lineNumber: 70,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "col-md-4 mt-3",
+                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("select", {
+                            className: "form-select",
+                            id: "validationTooltip04",
+                            required: true,
+                            onChange: (e)=>{
+                                setCategory(e.target.value);
+                            },
+                            children: [
+                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
+                                    selected: true,
+                                    disabled: true,
+                                    value: "",
+                                    children: "Choose..."
+                                }, void 0, false, {
+                                    fileName: "src/components/traders/addItem.jsx",
+                                    lineNumber: 78,
+                                    columnNumber: 25
+                                }, undefined),
+                                categoryList.map((category)=>{
+                                    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
+                                        children: category
+                                    }, void 0, false, {
+                                        fileName: "src/components/traders/addItem.jsx",
+                                        lineNumber: 80,
+                                        columnNumber: 36
+                                    }, undefined);
+                                })
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/components/traders/addItem.jsx",
+                            lineNumber: 75,
+                            columnNumber: 21
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/components/traders/addItem.jsx",
+                        lineNumber: 74,
+                        columnNumber: 17
+                    }, undefined),
+                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                        className: "p-1",
+                        children: [
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                type: "button",
+                                className: "btn btn-primary",
+                                onClick: AddNewItem,
+                                disabled: isLoading,
+                                children: isLoading ? 'Sending..' : 'RegisterCustomer Trader'
+                            }, void 0, false, {
+                                fileName: "src/components/traders/addItem.jsx",
+                                lineNumber: 89,
+                                columnNumber: 21
+                            }, undefined),
+                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                                type: "button",
+                                className: "btn btn-secondary",
+                                children: "Close"
+                            }, void 0, false, {
+                                fileName: "src/components/traders/addItem.jsx",
+                                lineNumber: 90,
+                                columnNumber: 21
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/components/traders/addItem.jsx",
+                        lineNumber: 88,
+                        columnNumber: 17
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/components/traders/addItem.jsx",
+                lineNumber: 65,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/components/traders/addItem.jsx",
+        lineNumber: 63,
+        columnNumber: 9
+    }, undefined);
+};
+_s(AddItem, "/yazTtnb3r+0ndNmvSL6vM7BKAo=");
+_c = AddItem;
+exports.default = AddItem;
+var _c;
+$RefreshReg$(_c, "AddItem");
+
+  $parcel$ReactRefreshHelpers$802b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","validator":"bliRI","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gIF5Q":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ac29 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ac29.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _validator = require("validator");
+var _validatorDefault = parcelHelpers.interopDefault(_validator);
+var _soloalert = require("soloalert");
+var _soloalertDefault = parcelHelpers.interopDefault(_soloalert);
+var _s = $RefreshSig$();
+const RegisterCustomer = ()=>{
+    _s();
+    const [isLoading, setLoading] = _react.useState(false);
+    const [fName, setfName] = _react.useState("");
+    const [lName, setlName] = _react.useState("");
+    const [mail, setmail] = _react.useState("");
+    const [phone, setphone] = _react.useState("");
+    const [nic, setnic] = _react.useState("");
+    const registerUser = async ()=>{
+        try {
+            if (!fName || !lName || !phone || !nic || !mail) _soloalertDefault.default.alert({
+                title: "Oops!",
+                body: "Please fill all field",
+                icon: "error",
+                theme: "dark",
+                useTransparency: true,
+                onOk: function() {}
+            });
+            else if (!_validatorDefault.default.isEmail(mail)) _soloalertDefault.default.alert({
+                title: "Oops!",
+                body: "Please enter valid mail address",
+                icon: "error",
+                theme: "dark",
+                useTransparency: true,
+                onOk: function() {}
+            });
+            else {
+                const newUser = {
+                    fName,
+                    lName,
+                    phone,
+                    nic,
+                    mail
+                };
+                const data = (await _axiosDefault.default.post("http://localhost:3000/customer", newUser)).data;
+                localStorage.setItem('user_id', JSON.stringify(data.Id));
+                window.location = '/customer/view-items';
+            }
+        } catch (e) {}
+    };
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        className: "container",
+        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
+            className: "mt-5",
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "col-md-4 mt-5",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                        type: "text",
+                        className: "form-control",
+                        placeholder: "Enter first name",
+                        onChange: (e)=>{
+                            setfName(e.target.value);
+                        },
+                        required: true
+                    }, void 0, false, {
+                        fileName: "src/components/customer/registerCustomer.jsx",
+                        lineNumber: 59,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/customer/registerCustomer.jsx",
+                    lineNumber: 58,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "col-md-4 mt-3",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                        type: "text",
+                        className: "form-control",
+                        placeholder: "Enter last name",
+                        onChange: (e)=>{
+                            setlName(e.target.value);
+                        },
+                        required: true
+                    }, void 0, false, {
+                        fileName: "src/components/customer/registerCustomer.jsx",
+                        lineNumber: 63,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/customer/registerCustomer.jsx",
+                    lineNumber: 62,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "col-md-4 mt-3",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                        type: "email",
+                        className: "form-control",
+                        placeholder: "Enter email",
+                        onChange: (e)=>{
+                            setmail(e.target.value);
+                        },
+                        required: true
+                    }, void 0, false, {
+                        fileName: "src/components/customer/registerCustomer.jsx",
+                        lineNumber: 67,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/customer/registerCustomer.jsx",
+                    lineNumber: 66,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "col-md-4 mt-3",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                        type: "number",
+                        className: "form-control",
+                        placeholder: "Enter phone",
+                        onChange: (e)=>{
+                            setphone(e.target.value);
+                        },
+                        required: true
+                    }, void 0, false, {
+                        fileName: "src/components/customer/registerCustomer.jsx",
+                        lineNumber: 71,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/customer/registerCustomer.jsx",
+                    lineNumber: 70,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "col-md-4 mt-3",
+                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
+                        type: "text",
+                        className: "form-control",
+                        placeholder: "Enter NIC",
+                        onChange: (e)=>{
+                            setnic(e.target.value);
+                        },
+                        required: true
+                    }, void 0, false, {
+                        fileName: "src/components/customer/registerCustomer.jsx",
+                        lineNumber: 75,
+                        columnNumber: 21
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/customer/registerCustomer.jsx",
+                    lineNumber: 74,
+                    columnNumber: 17
+                }, undefined),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+                    className: "p-1",
+                    children: [
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                            type: "button",
+                            className: "btn btn-primary",
+                            onClick: registerUser,
+                            disabled: isLoading,
+                            children: isLoading ? 'Sending..' : 'RegisterCustomer user'
+                        }, void 0, false, {
+                            fileName: "src/components/customer/registerCustomer.jsx",
+                            lineNumber: 79,
+                            columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                            type: "button",
+                            className: "btn btn-secondary",
+                            children: "Close"
+                        }, void 0, false, {
+                            fileName: "src/components/customer/registerCustomer.jsx",
+                            lineNumber: 80,
+                            columnNumber: 21
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/components/customer/registerCustomer.jsx",
+                    lineNumber: 78,
+                    columnNumber: 17
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/components/customer/registerCustomer.jsx",
+            lineNumber: 57,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/customer/registerCustomer.jsx",
+        lineNumber: 56,
+        columnNumber: 9
+    }, undefined);
+};
+_s(RegisterCustomer, "D6OGiXJvRiW1VELx+dMt/meVaJU=");
+_c = RegisterCustomer;
+exports.default = RegisterCustomer;
+var _c;
+$RefreshReg$(_c, "RegisterCustomer");
+
+  $parcel$ReactRefreshHelpers$ac29.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","validator":"bliRI","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eIWq5":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$664a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$664a.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _homeCss = require("../Home.css");
+var _soloalert = require("soloalert");
+var _soloalertDefault = parcelHelpers.interopDefault(_soloalert);
+var _s = $RefreshSig$();
+const ViewAllItem = ()=>{
     _s();
     const [item1, setItem] = _react.useState([]);
     const [isAdd, setIsAdd] = _react.useState(false);
@@ -38259,12 +38694,12 @@ const ViewItem = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "VIEW-ITEMS"
             }, void 0, false, {
-                fileName: "src/components/customer/views/viewItem.jsx",
+                fileName: "src/components/customer/ViewAllItem.jsx",
                 lineNumber: 110,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/customer/views/viewItem.jsx",
+                fileName: "src/components/customer/ViewAllItem.jsx",
                 lineNumber: 110,
                 columnNumber: 32
             }, undefined),
@@ -38286,7 +38721,7 @@ const ViewItem = ()=>{
                                             " "
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 116,
                                         columnNumber: 33
                                     }, undefined),
@@ -38298,7 +38733,7 @@ const ViewItem = ()=>{
                                             " "
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 117,
                                         columnNumber: 33
                                     }, undefined),
@@ -38310,7 +38745,7 @@ const ViewItem = ()=>{
                                             " "
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 118,
                                         columnNumber: 33
                                     }, undefined),
@@ -38327,7 +38762,7 @@ const ViewItem = ()=>{
                                                 },
                                                 children: "Purchased"
                                             }, void 0, false, {
-                                                fileName: "src/components/customer/views/viewItem.jsx",
+                                                fileName: "src/components/customer/ViewAllItem.jsx",
                                                 lineNumber: 120,
                                                 columnNumber: 37
                                             }, undefined),
@@ -38340,12 +38775,12 @@ const ViewItem = ()=>{
                                                     ,
                                                     children: "Add to cart"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/customer/views/viewItem.jsx",
+                                                    fileName: "src/components/customer/ViewAllItem.jsx",
                                                     lineNumber: 125,
                                                     columnNumber: 41
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/customer/views/viewItem.jsx",
+                                                fileName: "src/components/customer/ViewAllItem.jsx",
                                                 lineNumber: 124,
                                                 columnNumber: 37
                                             }, undefined),
@@ -38358,7 +38793,7 @@ const ViewItem = ()=>{
                                                         id: "flexCheckDefault",
                                                         onChange: ()=>addItemToWishlist(data)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                                         lineNumber: 128,
                                                         columnNumber: 41
                                                     }, undefined),
@@ -38367,46 +38802,46 @@ const ViewItem = ()=>{
                                                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h6", {
                                                             children: "wishlist"
                                                         }, void 0, false, {
-                                                            fileName: "src/components/customer/views/viewItem.jsx",
+                                                            fileName: "src/components/customer/ViewAllItem.jsx",
                                                             lineNumber: 130,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                                         lineNumber: 129,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "src/components/customer/views/viewItem.jsx",
+                                                fileName: "src/components/customer/ViewAllItem.jsx",
                                                 lineNumber: 127,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 119,
                                         columnNumber: 33
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/customer/views/viewItem.jsx",
+                                fileName: "src/components/customer/ViewAllItem.jsx",
                                 lineNumber: 115,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/customer/views/viewItem.jsx",
+                            fileName: "src/components/customer/ViewAllItem.jsx",
                             lineNumber: 114,
                             columnNumber: 25
                         }, undefined)
                     }, data.id, false, {
-                        fileName: "src/components/customer/views/viewItem.jsx",
+                        fileName: "src/components/customer/ViewAllItem.jsx",
                         lineNumber: 113,
                         columnNumber: 29
                     }, undefined);
                 })
             }, void 0, false, {
-                fileName: "src/components/customer/views/viewItem.jsx",
+                fileName: "src/components/customer/ViewAllItem.jsx",
                 lineNumber: 111,
                 columnNumber: 13
             }, undefined),
@@ -38432,7 +38867,7 @@ const ViewItem = ()=>{
                                             TotalBill
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 147,
                                         columnNumber: 29
                                     }, undefined),
@@ -38442,13 +38877,13 @@ const ViewItem = ()=>{
                                         "data-bs-dismiss": "modal",
                                         "aria-label": "Close"
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 148,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/customer/views/viewItem.jsx",
+                                fileName: "src/components/customer/ViewAllItem.jsx",
                                 lineNumber: 146,
                                 columnNumber: 25
                             }, undefined),
@@ -38465,7 +38900,7 @@ const ViewItem = ()=>{
                                         disabled: true,
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 152,
                                         columnNumber: 29
                                     }, undefined),
@@ -38479,7 +38914,7 @@ const ViewItem = ()=>{
                                         disabled: true,
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 154,
                                         columnNumber: 29
                                     }, undefined),
@@ -38493,7 +38928,7 @@ const ViewItem = ()=>{
                                         disabled: true,
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 156,
                                         columnNumber: 29
                                     }, undefined),
@@ -38509,7 +38944,7 @@ const ViewItem = ()=>{
                                         },
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 158,
                                         columnNumber: 29
                                     }, undefined),
@@ -38522,7 +38957,7 @@ const ViewItem = ()=>{
                                             "% discount for this item"
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 160,
                                         columnNumber: 29
                                     }, undefined),
@@ -38531,7 +38966,7 @@ const ViewItem = ()=>{
                                         hidden: discount1 !== 0,
                                         children: "Sorry! You didn't have any discount for this item"
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 161,
                                         columnNumber: 29
                                     }, undefined),
@@ -38542,13 +38977,13 @@ const ViewItem = ()=>{
                                             TotalBill
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 162,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/customer/views/viewItem.jsx",
+                                fileName: "src/components/customer/ViewAllItem.jsx",
                                 lineNumber: 151,
                                 columnNumber: 25
                             }, undefined),
@@ -38561,7 +38996,7 @@ const ViewItem = ()=>{
                                         "data-bs-dismiss": "modal",
                                         children: "Close"
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 165,
                                         columnNumber: 29
                                     }, undefined),
@@ -38573,55 +39008,55 @@ const ViewItem = ()=>{
                                         },
                                         children: "Purchase Item"
                                     }, void 0, false, {
-                                        fileName: "src/components/customer/views/viewItem.jsx",
+                                        fileName: "src/components/customer/ViewAllItem.jsx",
                                         lineNumber: 166,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/customer/views/viewItem.jsx",
+                                fileName: "src/components/customer/ViewAllItem.jsx",
                                 lineNumber: 164,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/customer/views/viewItem.jsx",
+                        fileName: "src/components/customer/ViewAllItem.jsx",
                         lineNumber: 145,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/customer/views/viewItem.jsx",
+                    fileName: "src/components/customer/ViewAllItem.jsx",
                     lineNumber: 144,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/customer/views/viewItem.jsx",
+                fileName: "src/components/customer/ViewAllItem.jsx",
                 lineNumber: 142,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/customer/views/viewItem.jsx",
+        fileName: "src/components/customer/ViewAllItem.jsx",
         lineNumber: 109,
         columnNumber: 9
     }, undefined);
 };
-_s(ViewItem, "5ADXezAzIgpH6mJNbCT/UzBQhVk=");
-_c = ViewItem;
-exports.default = ViewItem;
+_s(ViewAllItem, "5ADXezAzIgpH6mJNbCT/UzBQhVk=");
+_c = ViewAllItem;
+exports.default = ViewAllItem;
 var _c;
-$RefreshReg$(_c, "ViewItem");
+$RefreshReg$(_c, "ViewAllItem");
 
-  $parcel$ReactRefreshHelpers$28b9.postlude(module);
+  $parcel$ReactRefreshHelpers$664a.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"466ke":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$6397 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"l9uAV":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$6733 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$6397.prelude(module);
+$parcel$ReactRefreshHelpers$6733.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -38631,9 +39066,9 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _homeCss = require("../Home.css");
 var _s = $RefreshSig$();
-const ViewWishList = ()=>{
+const ViewFavouriteList = ()=>{
     _s();
     const [wishList, setwishList] = _react.useState([]);
     const user_id1 = JSON.parse(localStorage.getItem('user_id'));
@@ -38679,12 +39114,12 @@ const ViewWishList = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "WISH-LIST"
             }, void 0, false, {
-                fileName: "src/components/customer/views/viewWishList.jsx",
+                fileName: "src/components/customer/ViewFavouriteList.jsx",
                 lineNumber: 54,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/customer/views/viewWishList.jsx",
+                fileName: "src/components/customer/ViewFavouriteList.jsx",
                 lineNumber: 54,
                 columnNumber: 31
             }, undefined),
@@ -38706,7 +39141,7 @@ const ViewWishList = ()=>{
                                             " "
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewWishList.jsx",
+                                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                                         lineNumber: 60,
                                         columnNumber: 33
                                     }, undefined),
@@ -38718,7 +39153,7 @@ const ViewWishList = ()=>{
                                             " "
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewWishList.jsx",
+                                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                                         lineNumber: 61,
                                         columnNumber: 33
                                     }, undefined),
@@ -38735,12 +39170,12 @@ const ViewWishList = ()=>{
                                                             className: "btn btn-primary float-end",
                                                             children: "Purchase Item"
                                                         }, void 0, false, {
-                                                            fileName: "src/components/customer/views/viewWishList.jsx",
+                                                            fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                             lineNumber: 65,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewWishList.jsx",
+                                                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                         lineNumber: 64,
                                                         columnNumber: 41
                                                     }, undefined),
@@ -38751,13 +39186,13 @@ const ViewWishList = ()=>{
                                                         ,
                                                         children: "Add to cart"
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewWishList.jsx",
+                                                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                         lineNumber: 67,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "src/components/customer/views/viewWishList.jsx",
+                                                fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                 lineNumber: 63,
                                                 columnNumber: 37
                                             }, undefined),
@@ -38770,7 +39205,7 @@ const ViewWishList = ()=>{
                                                         id: "flexCheckDefault",
                                                         onChange: ()=>removeItemToWishlist(data)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewWishList.jsx",
+                                                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                         lineNumber: 70,
                                                         columnNumber: 41
                                                     }, undefined),
@@ -38779,72 +39214,72 @@ const ViewWishList = ()=>{
                                                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h6", {
                                                             children: "Remove from wishlist"
                                                         }, void 0, false, {
-                                                            fileName: "src/components/customer/views/viewWishList.jsx",
+                                                            fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                             lineNumber: 72,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewWishList.jsx",
+                                                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                         lineNumber: 71,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "src/components/customer/views/viewWishList.jsx",
+                                                fileName: "src/components/customer/ViewFavouriteList.jsx",
                                                 lineNumber: 69,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewWishList.jsx",
+                                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                                         lineNumber: 62,
                                         columnNumber: 33
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/customer/views/viewWishList.jsx",
+                                fileName: "src/components/customer/ViewFavouriteList.jsx",
                                 lineNumber: 59,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/customer/views/viewWishList.jsx",
+                            fileName: "src/components/customer/ViewFavouriteList.jsx",
                             lineNumber: 58,
                             columnNumber: 25
                         }, undefined)
                     }, data.id, false, {
-                        fileName: "src/components/customer/views/viewWishList.jsx",
+                        fileName: "src/components/customer/ViewFavouriteList.jsx",
                         lineNumber: 57,
                         columnNumber: 29
                     }, undefined);
                 })
             }, void 0, false, {
-                fileName: "src/components/customer/views/viewWishList.jsx",
+                fileName: "src/components/customer/ViewFavouriteList.jsx",
                 lineNumber: 55,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/customer/views/viewWishList.jsx",
+        fileName: "src/components/customer/ViewFavouriteList.jsx",
         lineNumber: 53,
         columnNumber: 9
     }, undefined);
 };
-_s(ViewWishList, "SkVdwTR1wKU24EdjQK8m74Du3eY=");
-_c = ViewWishList;
-exports.default = ViewWishList;
+_s(ViewFavouriteList, "SkVdwTR1wKU24EdjQK8m74Du3eY=");
+_c = ViewFavouriteList;
+exports.default = ViewFavouriteList;
 var _c;
-$RefreshReg$(_c, "ViewWishList");
+$RefreshReg$(_c, "ViewFavouriteList");
 
-  $parcel$ReactRefreshHelpers$6397.postlude(module);
+  $parcel$ReactRefreshHelpers$6733.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"7MWI3":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$5a71 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"eQToi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3164 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$5a71.prelude(module);
+$parcel$ReactRefreshHelpers$3164.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -38854,7 +39289,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _homeCss = require("../Home.css");
 var _s = $RefreshSig$();
 const ViewCart = ()=>{
     _s();
@@ -38890,12 +39325,12 @@ const ViewCart = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "VIEW-CART"
             }, void 0, false, {
-                fileName: "src/components/customer/views/viewCart.jsx",
+                fileName: "src/components/customer/ViewCart.jsx",
                 lineNumber: 41,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/customer/views/viewCart.jsx",
+                fileName: "src/components/customer/ViewCart.jsx",
                 lineNumber: 41,
                 columnNumber: 31
             }, undefined),
@@ -38917,7 +39352,7 @@ const ViewCart = ()=>{
                                             " "
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewCart.jsx",
+                                        fileName: "src/components/customer/ViewCart.jsx",
                                         lineNumber: 47,
                                         columnNumber: 33
                                     }, undefined),
@@ -38929,7 +39364,7 @@ const ViewCart = ()=>{
                                             " "
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewCart.jsx",
+                                        fileName: "src/components/customer/ViewCart.jsx",
                                         lineNumber: 48,
                                         columnNumber: 33
                                     }, undefined),
@@ -38943,12 +39378,12 @@ const ViewCart = ()=>{
                                                     className: "btn btn-primary float-end",
                                                     children: "Purchase Item"
                                                 }, void 0, false, {
-                                                    fileName: "src/components/customer/views/viewCart.jsx",
+                                                    fileName: "src/components/customer/ViewCart.jsx",
                                                     lineNumber: 51,
                                                     columnNumber: 37
                                                 }, undefined)
                                             }, void 0, false, {
-                                                fileName: "src/components/customer/views/viewCart.jsx",
+                                                fileName: "src/components/customer/ViewCart.jsx",
                                                 lineNumber: 50,
                                                 columnNumber: 37
                                             }, undefined),
@@ -38961,7 +39396,7 @@ const ViewCart = ()=>{
                                                         id: "flexCheckDefault",
                                                         onChange: ()=>addItemToWishlist(data)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewCart.jsx",
+                                                        fileName: "src/components/customer/ViewCart.jsx",
                                                         lineNumber: 55,
                                                         columnNumber: 41
                                                     }, undefined),
@@ -38970,52 +39405,52 @@ const ViewCart = ()=>{
                                                         children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h6", {
                                                             children: "wishlist"
                                                         }, void 0, false, {
-                                                            fileName: "src/components/customer/views/viewCart.jsx",
+                                                            fileName: "src/components/customer/ViewCart.jsx",
                                                             lineNumber: 57,
                                                             columnNumber: 45
                                                         }, undefined)
                                                     }, void 0, false, {
-                                                        fileName: "src/components/customer/views/viewCart.jsx",
+                                                        fileName: "src/components/customer/ViewCart.jsx",
                                                         lineNumber: 56,
                                                         columnNumber: 41
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
-                                                fileName: "src/components/customer/views/viewCart.jsx",
+                                                fileName: "src/components/customer/ViewCart.jsx",
                                                 lineNumber: 54,
                                                 columnNumber: 37
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/customer/views/viewCart.jsx",
+                                        fileName: "src/components/customer/ViewCart.jsx",
                                         lineNumber: 49,
                                         columnNumber: 33
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/customer/views/viewCart.jsx",
+                                fileName: "src/components/customer/ViewCart.jsx",
                                 lineNumber: 46,
                                 columnNumber: 29
                             }, undefined)
                         }, void 0, false, {
-                            fileName: "src/components/customer/views/viewCart.jsx",
+                            fileName: "src/components/customer/ViewCart.jsx",
                             lineNumber: 45,
                             columnNumber: 25
                         }, undefined)
                     }, data.id, false, {
-                        fileName: "src/components/customer/views/viewCart.jsx",
+                        fileName: "src/components/customer/ViewCart.jsx",
                         lineNumber: 44,
                         columnNumber: 29
                     }, undefined);
                 })
             }, void 0, false, {
-                fileName: "src/components/customer/views/viewCart.jsx",
+                fileName: "src/components/customer/ViewCart.jsx",
                 lineNumber: 42,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/customer/views/viewCart.jsx",
+        fileName: "src/components/customer/ViewCart.jsx",
         lineNumber: 40,
         columnNumber: 9
     }, undefined);
@@ -39026,16 +39461,16 @@ exports.default = ViewCart;
 var _c;
 $RefreshReg$(_c, "ViewCart");
 
-  $parcel$ReactRefreshHelpers$5a71.postlude(module);
+  $parcel$ReactRefreshHelpers$3164.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"iPNYg":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9855 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"918IG":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$bff2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9855.prelude(module);
+$parcel$ReactRefreshHelpers$bff2.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -39045,442 +39480,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _validator = require("validator");
-var _validatorDefault = parcelHelpers.interopDefault(_validator);
-var _soloalert = require("soloalert");
-var _soloalertDefault = parcelHelpers.interopDefault(_soloalert);
-var _s = $RefreshSig$();
-const Register = ()=>{
-    _s();
-    const [isLoading, setLoading] = _react.useState(false);
-    const [fName, setfName] = _react.useState("");
-    const [lName, setlName] = _react.useState("");
-    const [mail, setmail] = _react.useState("");
-    const [phone, setphone] = _react.useState("");
-    const [nic, setnic] = _react.useState("");
-    const registerUser = async ()=>{
-        try {
-            setLoading(true);
-            if (!fName || !lName || !phone || !nic || !mail) _soloalertDefault.default.alert({
-                title: "Oops!",
-                body: "Please fill all field",
-                icon: "error",
-                theme: "dark",
-                useTransparency: true,
-                onOk: function() {}
-            });
-            else if (!_validatorDefault.default.isEmail(mail)) _soloalertDefault.default.alert({
-                title: "Oops!",
-                body: "Please enter valid mail address",
-                icon: "error",
-                theme: "dark",
-                useTransparency: true,
-                onOk: function() {}
-            });
-            else {
-                const newTrader = {
-                    fName,
-                    lName,
-                    phone,
-                    nic,
-                    mail
-                };
-                const data = (await _axiosDefault.default.post("http://localhost:3000/traders", newTrader)).data;
-                localStorage.setItem('trader_id', JSON.stringify(data.Id));
-                window.location = '/trader/add-new-item';
-            }
-            setLoading(false);
-        } catch (e) {}
-    };
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "container",
-        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
-            className: "mt-5",
-            children: [
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "col-md-4 mt-5",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                        type: "text",
-                        className: "form-control",
-                        placeholder: "Enter first name",
-                        onChange: (e)=>{
-                            setfName(e.target.value);
-                        },
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/register.jsx",
-                        lineNumber: 60,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/traders/views/register.jsx",
-                    lineNumber: 59,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "col-md-4 mt-3",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                        type: "text",
-                        className: "form-control",
-                        placeholder: "Enter last name",
-                        onChange: (e)=>{
-                            setlName(e.target.value);
-                        },
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/register.jsx",
-                        lineNumber: 64,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/traders/views/register.jsx",
-                    lineNumber: 63,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "col-md-4 mt-3",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                        type: "email",
-                        className: "form-control",
-                        placeholder: "Enter email",
-                        onChange: (e)=>{
-                            setmail(e.target.value);
-                        },
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/register.jsx",
-                        lineNumber: 68,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/traders/views/register.jsx",
-                    lineNumber: 67,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "col-md-4 mt-3",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                        type: "number",
-                        className: "form-control",
-                        placeholder: "Enter phone",
-                        onChange: (e)=>{
-                            setphone(e.target.value);
-                        },
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/register.jsx",
-                        lineNumber: 72,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/traders/views/register.jsx",
-                    lineNumber: 71,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "col-md-4 mt-3",
-                    children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                        type: "text",
-                        className: "form-control",
-                        placeholder: "Enter NIC",
-                        onChange: (e)=>{
-                            setnic(e.target.value);
-                        },
-                        required: true
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/register.jsx",
-                        lineNumber: 76,
-                        columnNumber: 21
-                    }, undefined)
-                }, void 0, false, {
-                    fileName: "src/components/traders/views/register.jsx",
-                    lineNumber: 75,
-                    columnNumber: 17
-                }, undefined),
-                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                    className: "p-1",
-                    children: [
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                            type: "button",
-                            className: "btn btn-primary",
-                            onClick: registerUser,
-                            disabled: isLoading,
-                            children: isLoading ? 'Sending..' : 'Register Trader'
-                        }, void 0, false, {
-                            fileName: "src/components/traders/views/register.jsx",
-                            lineNumber: 80,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                            type: "button",
-                            className: "btn btn-secondary",
-                            children: "Close"
-                        }, void 0, false, {
-                            fileName: "src/components/traders/views/register.jsx",
-                            lineNumber: 81,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/traders/views/register.jsx",
-                    lineNumber: 79,
-                    columnNumber: 17
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/components/traders/views/register.jsx",
-            lineNumber: 58,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/components/traders/views/register.jsx",
-        lineNumber: 57,
-        columnNumber: 9
-    }, undefined);
-};
-_s(Register, "D6OGiXJvRiW1VELx+dMt/meVaJU=");
-_c = Register;
-exports.default = Register;
-var _c;
-$RefreshReg$(_c, "Register");
-
-  $parcel$ReactRefreshHelpers$9855.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","validator":"bliRI","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gUWBt":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d059 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d059.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _validator = require("validator");
-var _validatorDefault = parcelHelpers.interopDefault(_validator);
-var _soloalert = require("soloalert");
-var _soloalertDefault = parcelHelpers.interopDefault(_soloalert);
-var _s = $RefreshSig$();
-const AddItem = ()=>{
-    _s();
-    const [isLoading, setLoading] = _react.useState(false);
-    const [name, setName] = _react.useState("");
-    const [category1, setCategory] = _react.useState("");
-    const [price, setPrice] = _react.useState("");
-    const [categoryList, setCategoryList] = _react.useState([]);
-    const trader_id = JSON.parse(localStorage.getItem('trader_id'));
-    _react.useEffect(async ()=>{
-        async function getCategory() {
-            const data = (await _axiosDefault.default.get(`http://localhost:3000/traders/categories`)).data;
-            console.log(data);
-            setCategoryList(data);
-        }
-        await getCategory();
-    }, []);
-    const AddNewItem = async ()=>{
-        try {
-            setLoading(true);
-            if (!price || !name || !category1) _soloalertDefault.default.alert({
-                title: "Oops!",
-                body: "Please fill all fields",
-                icon: "error",
-                theme: "dark",
-                useTransparency: true,
-                onOk: function() {}
-            });
-            else {
-                const newItem = {
-                    category: category1,
-                    name,
-                    price,
-                    trader_id
-                };
-                const data = (await _axiosDefault.default.post("http://localhost:3000/traders/items", newItem)).data;
-                _soloalertDefault.default.alert({
-                    title: "Oops!",
-                    body: "Item Added Successfully",
-                    icon: "success",
-                    theme: "dark",
-                    useTransparency: true,
-                    onOk: function() {}
-                });
-            }
-            setLoading(false);
-        } catch (e) {}
-    };
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        className: "content mt-5",
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
-                children: "ADD-NEW-ITEM"
-            }, void 0, false, {
-                fileName: "src/components/traders/views/addItem.jsx",
-                lineNumber: 64,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/traders/views/addItem.jsx",
-                lineNumber: 64,
-                columnNumber: 34
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("form", {
-                className: "mt-5",
-                children: [
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                        className: "col-md-4 mt-5",
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                            type: "text",
-                            className: "form-control",
-                            placeholder: "Enter name",
-                            onChange: (e)=>{
-                                setName(e.target.value);
-                            },
-                            required: true
-                        }, void 0, false, {
-                            fileName: "src/components/traders/views/addItem.jsx",
-                            lineNumber: 67,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/addItem.jsx",
-                        lineNumber: 66,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                        className: "col-md-4 mt-3",
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("input", {
-                            type: "number",
-                            className: "form-control",
-                            placeholder: "Enter price",
-                            onChange: (e)=>{
-                                setPrice(e.target.value);
-                            },
-                            required: true
-                        }, void 0, false, {
-                            fileName: "src/components/traders/views/addItem.jsx",
-                            lineNumber: 71,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/addItem.jsx",
-                        lineNumber: 70,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                        className: "col-md-4 mt-3",
-                        children: /*#__PURE__*/ _jsxDevRuntime.jsxDEV("select", {
-                            className: "form-select",
-                            id: "validationTooltip04",
-                            required: true,
-                            onChange: (e)=>{
-                                setCategory(e.target.value);
-                            },
-                            children: [
-                                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
-                                    selected: true,
-                                    disabled: true,
-                                    value: "",
-                                    children: "Choose..."
-                                }, void 0, false, {
-                                    fileName: "src/components/traders/views/addItem.jsx",
-                                    lineNumber: 78,
-                                    columnNumber: 25
-                                }, undefined),
-                                categoryList.map((category)=>{
-                                    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
-                                        children: category
-                                    }, void 0, false, {
-                                        fileName: "src/components/traders/views/addItem.jsx",
-                                        lineNumber: 80,
-                                        columnNumber: 36
-                                    }, undefined);
-                                })
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/components/traders/views/addItem.jsx",
-                            lineNumber: 75,
-                            columnNumber: 21
-                        }, undefined)
-                    }, void 0, false, {
-                        fileName: "src/components/traders/views/addItem.jsx",
-                        lineNumber: 74,
-                        columnNumber: 17
-                    }, undefined),
-                    /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-                        className: "p-1",
-                        children: [
-                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                                type: "button",
-                                className: "btn btn-primary",
-                                onClick: AddNewItem,
-                                disabled: isLoading,
-                                children: isLoading ? 'Sending..' : 'Register Trader'
-                            }, void 0, false, {
-                                fileName: "src/components/traders/views/addItem.jsx",
-                                lineNumber: 89,
-                                columnNumber: 21
-                            }, undefined),
-                            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
-                                type: "button",
-                                className: "btn btn-secondary",
-                                children: "Close"
-                            }, void 0, false, {
-                                fileName: "src/components/traders/views/addItem.jsx",
-                                lineNumber: 90,
-                                columnNumber: 21
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/components/traders/views/addItem.jsx",
-                        lineNumber: 88,
-                        columnNumber: 17
-                    }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/components/traders/views/addItem.jsx",
-                lineNumber: 65,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/components/traders/views/addItem.jsx",
-        lineNumber: 63,
-        columnNumber: 9
-    }, undefined);
-};
-_s(AddItem, "/yazTtnb3r+0ndNmvSL6vM7BKAo=");
-_c = AddItem;
-exports.default = AddItem;
-var _c;
-$RefreshReg$(_c, "AddItem");
-
-  $parcel$ReactRefreshHelpers$d059.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","validator":"bliRI","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6wcRp":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$b522 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$b522.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _homeCss = require("../Home.css");
 var _s = $RefreshSig$();
 const ViewInventory = ()=>{
     _s();
@@ -39500,12 +39500,12 @@ const ViewInventory = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "VIEW-INVENTORY"
             }, void 0, false, {
-                fileName: "src/components/traders/views/ViewInvventory.jsx",
+                fileName: "src/components/traders/IventoryView.jsx",
                 lineNumber: 21,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/traders/views/ViewInvventory.jsx",
+                fileName: "src/components/traders/IventoryView.jsx",
                 lineNumber: 21,
                 columnNumber: 36
             }, undefined),
@@ -39519,7 +39519,7 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Category"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/ViewInvventory.jsx",
+                                    fileName: "src/components/traders/IventoryView.jsx",
                                     lineNumber: 25,
                                     columnNumber: 21
                                 }, undefined),
@@ -39527,18 +39527,18 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Stock"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/ViewInvventory.jsx",
+                                    fileName: "src/components/traders/IventoryView.jsx",
                                     lineNumber: 26,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/traders/views/ViewInvventory.jsx",
+                            fileName: "src/components/traders/IventoryView.jsx",
                             lineNumber: 24,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/ViewInvventory.jsx",
+                        fileName: "src/components/traders/IventoryView.jsx",
                         lineNumber: 23,
                         columnNumber: 17
                     }, undefined),
@@ -39550,38 +39550,38 @@ const ViewInventory = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data[0]
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/ViewInvventory.jsx",
+                                        fileName: "src/components/traders/IventoryView.jsx",
                                         lineNumber: 33,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data[1].count
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/ViewInvventory.jsx",
+                                        fileName: "src/components/traders/IventoryView.jsx",
                                         lineNumber: 36,
                                         columnNumber: 25
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/traders/views/ViewInvventory.jsx",
+                                fileName: "src/components/traders/IventoryView.jsx",
                                 lineNumber: 32,
                                 columnNumber: 28
                             }, undefined);
                         })
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/ViewInvventory.jsx",
+                        fileName: "src/components/traders/IventoryView.jsx",
                         lineNumber: 30,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/traders/views/ViewInvventory.jsx",
+                fileName: "src/components/traders/IventoryView.jsx",
                 lineNumber: 22,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/traders/views/ViewInvventory.jsx",
+        fileName: "src/components/traders/IventoryView.jsx",
         lineNumber: 20,
         columnNumber: 9
     }, undefined);
@@ -39592,16 +39592,16 @@ exports.default = ViewInventory;
 var _c;
 $RefreshReg$(_c, "ViewInventory");
 
-  $parcel$ReactRefreshHelpers$b522.postlude(module);
+  $parcel$ReactRefreshHelpers$bff2.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"leqaP":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9414 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"jzgRi":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0e80 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9414.prelude(module);
+$parcel$ReactRefreshHelpers$0e80.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -39611,7 +39611,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _homeCss = require("../Home.css");
 var _s = $RefreshSig$();
 const ViewInventory = ()=>{
     _s();
@@ -39630,12 +39630,12 @@ const ViewInventory = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "VIEW-CUSTOMERS"
             }, void 0, false, {
-                fileName: "src/components/traders/views/ViewCustomer.jsx",
+                fileName: "src/components/traders/ViewCustomers.jsx",
                 lineNumber: 20,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/traders/views/ViewCustomer.jsx",
+                fileName: "src/components/traders/ViewCustomers.jsx",
                 lineNumber: 20,
                 columnNumber: 36
             }, undefined),
@@ -39649,7 +39649,7 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "First name"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                    fileName: "src/components/traders/ViewCustomers.jsx",
                                     lineNumber: 24,
                                     columnNumber: 21
                                 }, undefined),
@@ -39657,7 +39657,7 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Last name"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                    fileName: "src/components/traders/ViewCustomers.jsx",
                                     lineNumber: 25,
                                     columnNumber: 21
                                 }, undefined),
@@ -39665,7 +39665,7 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Email"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                    fileName: "src/components/traders/ViewCustomers.jsx",
                                     lineNumber: 26,
                                     columnNumber: 21
                                 }, undefined),
@@ -39673,7 +39673,7 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "NIC"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                    fileName: "src/components/traders/ViewCustomers.jsx",
                                     lineNumber: 27,
                                     columnNumber: 21
                                 }, undefined),
@@ -39681,18 +39681,18 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Phone"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                    fileName: "src/components/traders/ViewCustomers.jsx",
                                     lineNumber: 28,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/traders/views/ViewCustomer.jsx",
+                            fileName: "src/components/traders/ViewCustomers.jsx",
                             lineNumber: 23,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/ViewCustomer.jsx",
+                        fileName: "src/components/traders/ViewCustomers.jsx",
                         lineNumber: 22,
                         columnNumber: 17
                     }, undefined),
@@ -39704,59 +39704,59 @@ const ViewInventory = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.fName
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                        fileName: "src/components/traders/ViewCustomers.jsx",
                                         lineNumber: 35,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.lName
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                        fileName: "src/components/traders/ViewCustomers.jsx",
                                         lineNumber: 38,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.mail
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                        fileName: "src/components/traders/ViewCustomers.jsx",
                                         lineNumber: 41,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.nic
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                        fileName: "src/components/traders/ViewCustomers.jsx",
                                         lineNumber: 44,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.phone
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                        fileName: "src/components/traders/ViewCustomers.jsx",
                                         lineNumber: 48,
                                         columnNumber: 25
                                     }, undefined)
                                 ]
                             }, data.Id, true, {
-                                fileName: "src/components/traders/views/ViewCustomer.jsx",
+                                fileName: "src/components/traders/ViewCustomers.jsx",
                                 lineNumber: 34,
                                 columnNumber: 28
                             }, undefined);
                         })
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/ViewCustomer.jsx",
+                        fileName: "src/components/traders/ViewCustomers.jsx",
                         lineNumber: 32,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/traders/views/ViewCustomer.jsx",
+                fileName: "src/components/traders/ViewCustomers.jsx",
                 lineNumber: 21,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/traders/views/ViewCustomer.jsx",
+        fileName: "src/components/traders/ViewCustomers.jsx",
         lineNumber: 19,
         columnNumber: 9
     }, undefined);
@@ -39767,16 +39767,16 @@ exports.default = ViewInventory;
 var _c;
 $RefreshReg$(_c, "ViewInventory");
 
-  $parcel$ReactRefreshHelpers$9414.postlude(module);
+  $parcel$ReactRefreshHelpers$0e80.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"beWHC":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$019f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"g4l9c":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b039 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$019f.prelude(module);
+$parcel$ReactRefreshHelpers$b039.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -39786,7 +39786,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _homeCss = require("../Home.css");
 var _soloalert = require("soloalert");
 var _soloalertDefault = parcelHelpers.interopDefault(_soloalert);
 var _s = $RefreshSig$();
@@ -39842,12 +39842,12 @@ const EditItem = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "VIEW-CUSTOMERS"
             }, void 0, false, {
-                fileName: "src/components/traders/views/updateItem.jsx",
+                fileName: "src/components/traders/UpdateMyItem.jsx",
                 lineNumber: 58,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/traders/views/updateItem.jsx",
+                fileName: "src/components/traders/UpdateMyItem.jsx",
                 lineNumber: 58,
                 columnNumber: 36
             }, undefined),
@@ -39870,7 +39870,7 @@ const EditItem = ()=>{
                                         id: "exampleModalLabel",
                                         children: "edit Item"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 66,
                                         columnNumber: 29
                                     }, undefined),
@@ -39880,13 +39880,13 @@ const EditItem = ()=>{
                                         "data-bs-dismiss": "modal",
                                         "aria-label": "Close"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 67,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/traders/views/updateItem.jsx",
+                                fileName: "src/components/traders/UpdateMyItem.jsx",
                                 lineNumber: 65,
                                 columnNumber: 25
                             }, undefined),
@@ -39902,7 +39902,7 @@ const EditItem = ()=>{
                                         },
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 70,
                                         columnNumber: 29
                                     }, undefined),
@@ -39915,7 +39915,7 @@ const EditItem = ()=>{
                                         },
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 72,
                                         columnNumber: 29
                                     }, undefined),
@@ -39934,7 +39934,7 @@ const EditItem = ()=>{
                                                 value: "",
                                                 children: "Choose..."
                                             }, void 0, false, {
-                                                fileName: "src/components/traders/views/updateItem.jsx",
+                                                fileName: "src/components/traders/UpdateMyItem.jsx",
                                                 lineNumber: 77,
                                                 columnNumber: 33
                                             }, undefined),
@@ -39942,20 +39942,20 @@ const EditItem = ()=>{
                                                 return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("option", {
                                                     children: category
                                                 }, void 0, false, {
-                                                    fileName: "src/components/traders/views/updateItem.jsx",
+                                                    fileName: "src/components/traders/UpdateMyItem.jsx",
                                                     lineNumber: 79,
                                                     columnNumber: 44
                                                 }, undefined);
                                             })
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 74,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/traders/views/updateItem.jsx",
+                                fileName: "src/components/traders/UpdateMyItem.jsx",
                                 lineNumber: 69,
                                 columnNumber: 25
                             }, undefined),
@@ -39968,7 +39968,7 @@ const EditItem = ()=>{
                                         "data-bs-dismiss": "modal",
                                         children: "Close"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 88,
                                         columnNumber: 29
                                     }, undefined),
@@ -39978,29 +39978,29 @@ const EditItem = ()=>{
                                         onClick: updateItem,
                                         children: "UpdateItem"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 89,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/traders/views/updateItem.jsx",
+                                fileName: "src/components/traders/UpdateMyItem.jsx",
                                 lineNumber: 87,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/traders/views/updateItem.jsx",
+                        fileName: "src/components/traders/UpdateMyItem.jsx",
                         lineNumber: 64,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/traders/views/updateItem.jsx",
+                    fileName: "src/components/traders/UpdateMyItem.jsx",
                     lineNumber: 63,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/traders/views/updateItem.jsx",
+                fileName: "src/components/traders/UpdateMyItem.jsx",
                 lineNumber: 62,
                 columnNumber: 13
             }, undefined),
@@ -40014,7 +40014,7 @@ const EditItem = ()=>{
                                     scope: "col",
                                     children: "Name"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/updateItem.jsx",
+                                    fileName: "src/components/traders/UpdateMyItem.jsx",
                                     lineNumber: 97,
                                     columnNumber: 21
                                 }, undefined),
@@ -40022,7 +40022,7 @@ const EditItem = ()=>{
                                     scope: "col",
                                     children: "Category"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/updateItem.jsx",
+                                    fileName: "src/components/traders/UpdateMyItem.jsx",
                                     lineNumber: 98,
                                     columnNumber: 21
                                 }, undefined),
@@ -40030,18 +40030,18 @@ const EditItem = ()=>{
                                     scope: "col",
                                     children: "Price"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/updateItem.jsx",
+                                    fileName: "src/components/traders/UpdateMyItem.jsx",
                                     lineNumber: 99,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/traders/views/updateItem.jsx",
+                            fileName: "src/components/traders/UpdateMyItem.jsx",
                             lineNumber: 96,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/updateItem.jsx",
+                        fileName: "src/components/traders/UpdateMyItem.jsx",
                         lineNumber: 95,
                         columnNumber: 17
                     }, undefined),
@@ -40053,21 +40053,21 @@ const EditItem = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.name
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 106,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.category
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 109,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.price
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 112,
                                         columnNumber: 25
                                     }, undefined),
@@ -40082,36 +40082,36 @@ const EditItem = ()=>{
                                             },
                                             children: "Edit"
                                         }, void 0, false, {
-                                            fileName: "src/components/traders/views/updateItem.jsx",
+                                            fileName: "src/components/traders/UpdateMyItem.jsx",
                                             lineNumber: 116,
                                             columnNumber: 29
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/updateItem.jsx",
+                                        fileName: "src/components/traders/UpdateMyItem.jsx",
                                         lineNumber: 115,
                                         columnNumber: 25
                                     }, undefined)
                                 ]
                             }, data.Id, true, {
-                                fileName: "src/components/traders/views/updateItem.jsx",
+                                fileName: "src/components/traders/UpdateMyItem.jsx",
                                 lineNumber: 105,
                                 columnNumber: 28
                             }, undefined);
                         })
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/updateItem.jsx",
+                        fileName: "src/components/traders/UpdateMyItem.jsx",
                         lineNumber: 103,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/traders/views/updateItem.jsx",
+                fileName: "src/components/traders/UpdateMyItem.jsx",
                 lineNumber: 94,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/traders/views/updateItem.jsx",
+        fileName: "src/components/traders/UpdateMyItem.jsx",
         lineNumber: 57,
         columnNumber: 9
     }, undefined);
@@ -40122,16 +40122,16 @@ exports.default = EditItem;
 var _c;
 $RefreshReg$(_c, "EditItem");
 
-  $parcel$ReactRefreshHelpers$019f.postlude(module);
+  $parcel$ReactRefreshHelpers$b039.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"7bBjS":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d806 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"fR0NP":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$9f27 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d806.prelude(module);
+$parcel$ReactRefreshHelpers$9f27.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -40141,11 +40141,11 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _homeCss = require("../Home.css");
 var _soloalert = require("soloalert");
 var _soloalertDefault = parcelHelpers.interopDefault(_soloalert);
 var _s = $RefreshSig$();
-const AddPromotion = ()=>{
+const NewPromotion = ()=>{
     _s();
     const [items, setItem] = _react.useState([]);
     const [item_id, setItemId] = _react.useState('');
@@ -40197,12 +40197,12 @@ const AddPromotion = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "ADD-PROMOTION"
             }, void 0, false, {
-                fileName: "src/components/traders/views/AddPromotion.jsx",
+                fileName: "src/components/traders/NewPromotion.jsx",
                 lineNumber: 64,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/traders/views/AddPromotion.jsx",
+                fileName: "src/components/traders/NewPromotion.jsx",
                 lineNumber: 64,
                 columnNumber: 35
             }, undefined),
@@ -40225,7 +40225,7 @@ const AddPromotion = ()=>{
                                         id: "exampleModalLabel",
                                         children: "edit Item"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 72,
                                         columnNumber: 29
                                     }, undefined),
@@ -40235,13 +40235,13 @@ const AddPromotion = ()=>{
                                         "data-bs-dismiss": "modal",
                                         "aria-label": "Close"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 73,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/traders/views/AddPromotion.jsx",
+                                fileName: "src/components/traders/NewPromotion.jsx",
                                 lineNumber: 71,
                                 columnNumber: 25
                             }, undefined),
@@ -40257,7 +40257,7 @@ const AddPromotion = ()=>{
                                         },
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 76,
                                         columnNumber: 29
                                     }, undefined),
@@ -40270,13 +40270,13 @@ const AddPromotion = ()=>{
                                         },
                                         required: true
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 78,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/traders/views/AddPromotion.jsx",
+                                fileName: "src/components/traders/NewPromotion.jsx",
                                 lineNumber: 75,
                                 columnNumber: 25
                             }, undefined),
@@ -40289,7 +40289,7 @@ const AddPromotion = ()=>{
                                         "data-bs-dismiss": "modal",
                                         children: "Close"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 83,
                                         columnNumber: 29
                                     }, undefined),
@@ -40301,29 +40301,29 @@ const AddPromotion = ()=>{
                                         },
                                         children: "Add Promotion"
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 84,
                                         columnNumber: 29
                                     }, undefined)
                                 ]
                             }, void 0, true, {
-                                fileName: "src/components/traders/views/AddPromotion.jsx",
+                                fileName: "src/components/traders/NewPromotion.jsx",
                                 lineNumber: 82,
                                 columnNumber: 25
                             }, undefined)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                        fileName: "src/components/traders/NewPromotion.jsx",
                         lineNumber: 70,
                         columnNumber: 21
                     }, undefined)
                 }, void 0, false, {
-                    fileName: "src/components/traders/views/AddPromotion.jsx",
+                    fileName: "src/components/traders/NewPromotion.jsx",
                     lineNumber: 69,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
-                fileName: "src/components/traders/views/AddPromotion.jsx",
+                fileName: "src/components/traders/NewPromotion.jsx",
                 lineNumber: 68,
                 columnNumber: 13
             }, undefined),
@@ -40337,7 +40337,7 @@ const AddPromotion = ()=>{
                                     scope: "col",
                                     children: "Name"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/AddPromotion.jsx",
+                                    fileName: "src/components/traders/NewPromotion.jsx",
                                     lineNumber: 92,
                                     columnNumber: 21
                                 }, undefined),
@@ -40345,7 +40345,7 @@ const AddPromotion = ()=>{
                                     scope: "col",
                                     children: "Category"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/AddPromotion.jsx",
+                                    fileName: "src/components/traders/NewPromotion.jsx",
                                     lineNumber: 93,
                                     columnNumber: 21
                                 }, undefined),
@@ -40353,18 +40353,18 @@ const AddPromotion = ()=>{
                                     scope: "col",
                                     children: "Price"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/AddPromotion.jsx",
+                                    fileName: "src/components/traders/NewPromotion.jsx",
                                     lineNumber: 94,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/traders/views/AddPromotion.jsx",
+                            fileName: "src/components/traders/NewPromotion.jsx",
                             lineNumber: 91,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                        fileName: "src/components/traders/NewPromotion.jsx",
                         lineNumber: 90,
                         columnNumber: 17
                     }, undefined),
@@ -40376,21 +40376,21 @@ const AddPromotion = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.name
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 101,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.category
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 104,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.price
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 107,
                                         columnNumber: 25
                                     }, undefined),
@@ -40405,56 +40405,56 @@ const AddPromotion = ()=>{
                                             },
                                             children: "Add Prom"
                                         }, void 0, false, {
-                                            fileName: "src/components/traders/views/AddPromotion.jsx",
+                                            fileName: "src/components/traders/NewPromotion.jsx",
                                             lineNumber: 111,
                                             columnNumber: 29
                                         }, undefined)
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                                        fileName: "src/components/traders/NewPromotion.jsx",
                                         lineNumber: 110,
                                         columnNumber: 25
                                     }, undefined)
                                 ]
                             }, data.Id, true, {
-                                fileName: "src/components/traders/views/AddPromotion.jsx",
+                                fileName: "src/components/traders/NewPromotion.jsx",
                                 lineNumber: 100,
                                 columnNumber: 28
                             }, undefined);
                         })
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/AddPromotion.jsx",
+                        fileName: "src/components/traders/NewPromotion.jsx",
                         lineNumber: 98,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/traders/views/AddPromotion.jsx",
+                fileName: "src/components/traders/NewPromotion.jsx",
                 lineNumber: 89,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/traders/views/AddPromotion.jsx",
+        fileName: "src/components/traders/NewPromotion.jsx",
         lineNumber: 63,
         columnNumber: 9
     }, undefined);
 };
-_s(AddPromotion, "0CP3NDvbayJHPFA74+Chju3I53g=");
-_c = AddPromotion;
-exports.default = AddPromotion;
+_s(NewPromotion, "0CP3NDvbayJHPFA74+Chju3I53g=");
+_c = NewPromotion;
+exports.default = NewPromotion;
 var _c;
-$RefreshReg$(_c, "AddPromotion");
+$RefreshReg$(_c, "NewPromotion");
 
-  $parcel$ReactRefreshHelpers$d806.postlude(module);
+  $parcel$ReactRefreshHelpers$9f27.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"98r3k":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$35c5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}],"L87X4":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a716 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$35c5.prelude(module);
+$parcel$ReactRefreshHelpers$a716.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -40464,7 +40464,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _homeCss = require("../../Home.css");
+var _homeCss = require("../Home.css");
 var _s = $RefreshSig$();
 const ViewInventory = ()=>{
     _s();
@@ -40484,12 +40484,12 @@ const ViewInventory = ()=>{
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h3", {
                 children: "VIEW-PROMOTION"
             }, void 0, false, {
-                fileName: "src/components/traders/views/viewPromotion.jsx",
+                fileName: "src/components/traders/ViewMyPromotions.jsx",
                 lineNumber: 21,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ _jsxDevRuntime.jsxDEV("hr", {}, void 0, false, {
-                fileName: "src/components/traders/views/viewPromotion.jsx",
+                fileName: "src/components/traders/ViewMyPromotions.jsx",
                 lineNumber: 21,
                 columnNumber: 36
             }, undefined),
@@ -40503,7 +40503,7 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Item ID"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/viewPromotion.jsx",
+                                    fileName: "src/components/traders/ViewMyPromotions.jsx",
                                     lineNumber: 25,
                                     columnNumber: 21
                                 }, undefined),
@@ -40511,7 +40511,7 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Promotion code"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/viewPromotion.jsx",
+                                    fileName: "src/components/traders/ViewMyPromotions.jsx",
                                     lineNumber: 26,
                                     columnNumber: 21
                                 }, undefined),
@@ -40519,18 +40519,18 @@ const ViewInventory = ()=>{
                                     scope: "col",
                                     children: "Price"
                                 }, void 0, false, {
-                                    fileName: "src/components/traders/views/viewPromotion.jsx",
+                                    fileName: "src/components/traders/ViewMyPromotions.jsx",
                                     lineNumber: 27,
                                     columnNumber: 21
                                 }, undefined)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/traders/views/viewPromotion.jsx",
+                            fileName: "src/components/traders/ViewMyPromotions.jsx",
                             lineNumber: 24,
                             columnNumber: 17
                         }, undefined)
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/viewPromotion.jsx",
+                        fileName: "src/components/traders/ViewMyPromotions.jsx",
                         lineNumber: 23,
                         columnNumber: 17
                     }, undefined),
@@ -40542,14 +40542,14 @@ const ViewInventory = ()=>{
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.Id
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/viewPromotion.jsx",
+                                        fileName: "src/components/traders/ViewMyPromotions.jsx",
                                         lineNumber: 34,
                                         columnNumber: 25
                                     }, undefined),
                                     /*#__PURE__*/ _jsxDevRuntime.jsxDEV("td", {
                                         children: data.data.promotion_code
                                     }, void 0, false, {
-                                        fileName: "src/components/traders/views/viewPromotion.jsx",
+                                        fileName: "src/components/traders/ViewMyPromotions.jsx",
                                         lineNumber: 37,
                                         columnNumber: 25
                                     }, undefined),
@@ -40559,31 +40559,31 @@ const ViewInventory = ()=>{
                                             "%"
                                         ]
                                     }, void 0, true, {
-                                        fileName: "src/components/traders/views/viewPromotion.jsx",
+                                        fileName: "src/components/traders/ViewMyPromotions.jsx",
                                         lineNumber: 40,
                                         columnNumber: 25
                                     }, undefined)
                                 ]
                             }, data.Id, true, {
-                                fileName: "src/components/traders/views/viewPromotion.jsx",
+                                fileName: "src/components/traders/ViewMyPromotions.jsx",
                                 lineNumber: 33,
                                 columnNumber: 28
                             }, undefined);
                         })
                     }, void 0, false, {
-                        fileName: "src/components/traders/views/viewPromotion.jsx",
+                        fileName: "src/components/traders/ViewMyPromotions.jsx",
                         lineNumber: 31,
                         columnNumber: 17
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/traders/views/viewPromotion.jsx",
+                fileName: "src/components/traders/ViewMyPromotions.jsx",
                 lineNumber: 22,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/traders/views/viewPromotion.jsx",
+        fileName: "src/components/traders/ViewMyPromotions.jsx",
         lineNumber: 20,
         columnNumber: 9
     }, undefined);
@@ -40594,11 +40594,11 @@ exports.default = ViewInventory;
 var _c;
 $RefreshReg$(_c, "ViewInventory");
 
-  $parcel$ReactRefreshHelpers$35c5.postlude(module);
+  $parcel$ReactRefreshHelpers$a716.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}]},["kn9T2","1wDOc","d8Dch"], "d8Dch", "parcelRequirea65d")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../Home.css":"gNgm8","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gNgm8":[function() {},{}]},["kn9T2","1wDOc","d8Dch"], "d8Dch", "parcelRequirea65d")
 
 //# sourceMappingURL=index.b4b6dfad.js.map

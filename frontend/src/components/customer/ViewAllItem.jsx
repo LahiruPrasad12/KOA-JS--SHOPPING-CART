@@ -4,7 +4,7 @@ import '../Home.css'
 import SoloAlert from "soloalert";
 
 
-const ViewItem = () => {
+const ViewAllItem = () => {
     const [item, setItem] = useState([]);
     const [isAdd, setIsAdd] = useState(false)
 
@@ -172,4 +172,4 @@ const ViewItem = () => {
     );
 };
 
-export default ViewItem;
+export default ViewAllItem;

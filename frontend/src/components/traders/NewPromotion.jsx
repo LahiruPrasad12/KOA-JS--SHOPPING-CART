@@ -4,7 +4,7 @@ import '../Home.css'
 import SoloAlert from "soloalert";
 
 
-const AddPromotion = () => {
+const NewPromotion = () => {
     const [items, setItem] = useState([]);
     const [item_id, setItemId] = useState('');
 
@@ -122,4 +122,4 @@ const AddPromotion = () => {
     );
 };
 
-export default AddPromotion;
+export default NewPromotion;

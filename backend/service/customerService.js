@@ -7,7 +7,7 @@ const WishList = new Map()
 const PurchaseItem = new Map()
 const Item = new Map();
 
-//Register new user
+//RegisterCustomer new user
 export const register = (data) => {
         const customer = { Id: randomUUID(), data }
         User.set(customer.Id, customer.data)

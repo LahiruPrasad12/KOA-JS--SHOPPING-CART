@@ -19,7 +19,7 @@ const tradePath = new Router({
 })
 
 
-//Register User
+//RegisterCustomer User
 tradePath.post('/', (ctx) => {
     try {
         const data = ctx.request.body

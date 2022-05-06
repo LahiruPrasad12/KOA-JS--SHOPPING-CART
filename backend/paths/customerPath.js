@@ -14,7 +14,7 @@ import {
     register
 } from "../service/customerService.js";
 
-//Register User
+//RegisterCustomer User
 cusPath.post('/', (ctx) => {
     try {
         const data = ctx.request.body

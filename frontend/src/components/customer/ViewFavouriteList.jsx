@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from "axios";
 import '../Home.css'
 
-const ViewWishList = () => {
+const ViewFavouriteList = () => {
     const [wishList, setwishList] = useState([]);
     const user_id = JSON.parse(localStorage.getItem('user_id'));
     useEffect(async() => {
@@ -83,4 +83,4 @@ const ViewWishList = () => {
     );
 };
 
-export default ViewWishList;
+export default ViewFavouriteList;

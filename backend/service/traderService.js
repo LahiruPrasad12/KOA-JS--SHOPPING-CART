@@ -12,7 +12,7 @@ const Inventory = new Map();
 const Promotion = new Map()
 
 
-//Register new trader
+//RegisterCustomer new trader
 export const register = (data) => {
         const new_trader = { Id: randomUUID(), data }
         Trader.set(new_trader.Id, new_trader)

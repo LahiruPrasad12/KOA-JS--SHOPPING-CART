@@ -77,7 +77,7 @@ const Register = () => {
                            onChange={(e) => { setnic(e.target.value) }}  required/>
                 </div>
                 <div className="p-1">
-                    <button type="button" className="btn btn-primary" onClick={registerUser} disabled={isLoading} >{isLoading ? 'Sending..' : 'Register Trader'}</button>
+                    <button type="button" className="btn btn-primary" onClick={registerUser} disabled={isLoading} >{isLoading ? 'Sending..' : 'RegisterCustomer Trader'}</button>
                     <button type="button" className="btn btn-secondary">Close</button>
 
                 </div>

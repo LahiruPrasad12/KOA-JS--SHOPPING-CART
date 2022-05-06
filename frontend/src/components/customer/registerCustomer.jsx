@@ -3,7 +3,7 @@ import axios from "axios";
 import validation from 'validator'
 import SoloAlert from 'soloalert'
 
-const Register = () => {
+const RegisterCustomer = () => {
     const [isLoading, setLoading] = useState(false);
     const [fName, setfName] = useState("");
     const [lName, setlName] = useState("");
@@ -76,7 +76,7 @@ const Register = () => {
                            onChange={(e) => { setnic(e.target.value) }}  required/>
                 </div>
                 <div className="p-1">
-                    <button type="button" className="btn btn-primary" onClick={registerUser} disabled={isLoading} >{isLoading ? 'Sending..' : 'Register user'}</button>
+                    <button type="button" className="btn btn-primary" onClick={registerUser} disabled={isLoading} >{isLoading ? 'Sending..' : 'RegisterCustomer user'}</button>
                     <button type="button" className="btn btn-secondary">Close</button>
 
                 </div>
@@ -85,4 +85,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default RegisterCustomer;
