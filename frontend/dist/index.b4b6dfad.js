@@ -22916,7 +22916,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./home.jsx":"hdEcM","./views/customer/pages/register":"9bxSr","./views/customer/pages/viewItem":"iwQSp","./layouts/customeSidenav":"5ZHZ9","./views/customer/pages/viewWishList":"KqRd1","./views/customer/pages/viewCart":"2QD23","./views/traders/pages/register":"2sell","./views/traders/pages/addItem":"jNbdQ","./layouts/traderSideNav":"lHcrz","./views/traders/pages/ViewInvventory":"hL4yR","./views/traders/pages/ViewCustomer":"58qmt","./views/traders/pages/updateItem":"jP6Q4","./views/traders/pages/AddPromotion":"enUUF","./views/traders/pages/viewPromotion":"dmL8J"}],"cHIiW":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","./home.jsx":"hdEcM","./views/customer/pages/register":"9bxSr","./views/customer/pages/viewItem":"iwQSp","./layouts/customeSidenav":"5ZHZ9","./views/customer/pages/viewWishList":"KqRd1","./views/customer/pages/viewCart":"2QD23","./views/traders/pages/register":"2sell","./views/traders/pages/addItem":"jNbdQ","./layouts/traderSideNav":"lHcrz","./views/traders/pages/ViewInvventory":"hL4yR","./views/traders/pages/ViewCustomer":"58qmt","./views/traders/pages/updateItem":"jP6Q4","./views/traders/pages/AddPromotion":"enUUF","./views/traders/pages/viewPromotion":"dmL8J","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cHIiW":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "MemoryRouter", ()=>_reactRouter.MemoryRouter
@@ -26258,7 +26258,61 @@ module.exports = require('./cjs/react-is.development.js');
     exports.typeOf = typeOf;
 })();
 
-},{}],"km3Ru":[function(require,module,exports) {
+},{}],"hdEcM":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$0a7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$0a7c.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+const Home = ()=>{
+    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+        children: [
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                to: "/customer/register",
+                children: "Customer"
+            }, void 0, false, {
+                fileName: "src/home.jsx",
+                lineNumber: 7,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {}, void 0, false, {
+                fileName: "src/home.jsx",
+                lineNumber: 7,
+                columnNumber: 58
+            }, undefined),
+            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
+                to: "/trader/register",
+                children: "Trader"
+            }, void 0, false, {
+                fileName: "src/home.jsx",
+                lineNumber: 8,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/home.jsx",
+        lineNumber: 6,
+        columnNumber: 9
+    }, undefined);
+};
+_c = Home;
+exports.default = Home;
+var _c;
+$RefreshReg$(_c, "Home");
+
+  $parcel$ReactRefreshHelpers$0a7c.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"cHIiW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"km3Ru":[function(require,module,exports) {
 "use strict";
 var Refresh = require('react-refresh/runtime');
 function debounce(func, delay) {
@@ -26841,61 +26895,7 @@ module.exports = require('./cjs/react-refresh-runtime.development.js');
     exports.setSignature = setSignature;
 })();
 
-},{}],"hdEcM":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0a7c = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0a7c.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-const Home = ()=>{
-    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
-        children: [
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
-                to: "/customer/register",
-                children: "Customer"
-            }, void 0, false, {
-                fileName: "src/home.jsx",
-                lineNumber: 7,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV("br", {}, void 0, false, {
-                fileName: "src/home.jsx",
-                lineNumber: 7,
-                columnNumber: 58
-            }, undefined),
-            /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_reactRouterDom.Link, {
-                to: "/trader/register",
-                children: "Trader"
-            }, void 0, false, {
-                fileName: "src/home.jsx",
-                lineNumber: 8,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "src/home.jsx",
-        lineNumber: 6,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Home;
-exports.default = Home;
-var _c;
-$RefreshReg$(_c, "Home");
-
-  $parcel$ReactRefreshHelpers$0a7c.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react-router-dom":"cHIiW"}],"9bxSr":[function(require,module,exports) {
+},{}],"9bxSr":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$8bfa = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27111,7 +27111,7 @@ $RefreshReg$(_c, "Register");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","validator":"bliRI","soloalert":"6Ghof"}],"jo6P5":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","validator":"bliRI","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"jo6P5":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"63MyY"}],"63MyY":[function(require,module,exports) {
@@ -38441,7 +38441,7 @@ $RefreshReg$(_c, "ViewItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","axios":"jo6P5","../../Home.css":"6AHXY","soloalert":"6Ghof"}],"6AHXY":[function() {},{}],"5ZHZ9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"6AHXY","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6AHXY":[function() {},{}],"5ZHZ9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$82c0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39597,7 +39597,7 @@ $RefreshReg$(_c, "ViewInventory");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","../../Home.css":"6AHXY"}],"6AHXY":[function() {},{}],"58qmt":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"6AHXY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6AHXY":[function() {},{}],"58qmt":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$61a6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40127,7 +40127,7 @@ $RefreshReg$(_c, "EditItem");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"6AHXY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","soloalert":"6Ghof"}],"6AHXY":[function() {},{}],"enUUF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","axios":"jo6P5","../../Home.css":"6AHXY","soloalert":"6Ghof","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"6AHXY":[function() {},{}],"enUUF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$fa39 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
