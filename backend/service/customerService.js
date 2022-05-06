@@ -38,12 +38,12 @@ export const add_to_cart=(Id,data)=>{
 }
 
 //get cart
-export const getCart = (id) => {
+export const get_cart = (id) => {
         return Cart.get(id);
 }
 
 //Add item to favourite
-export const addOrRemoveItemToWishlist=(data)=>{
+export const handle_fav_item=(data)=>{
     let new_data = data
     let num=0
     if(!Item.has(data.item_id)){
@@ -68,7 +68,7 @@ export const addOrRemoveItemToWishlist=(data)=>{
 }
 
 //get relevant user wish item
-export const getWishItem = (id) => {
+export const get_fav_item = (id) => {
         let favItem = []
         WishList.forEach((value, key) => {
             if(value.new_data.user_id === id){

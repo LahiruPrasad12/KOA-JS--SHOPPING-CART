@@ -6,10 +6,10 @@ const cusPath = new Router({
 
 import {
     add_to_cart,
-    addOrRemoveItemToWishlist,
+    handle_fav_item,
     get_all_customers,
-    getCart,
-    getWishItem,
+    get_cart,
+    get_fav_item,
     purchaseItem,
     register
 } from "../service/customerService.js";
@@ -51,7 +51,7 @@ cusPath.post('/cart-item', (ctx) => {
 cusPath.get('/cart-item/:id', (ctx) => {
 
         const id = ctx.params.id
-        ctx.body = getCart(id)
+        ctx.body = get_cart(id)
         ctx.set('Content-Type', 'Application.json')
         ctx.status = 200;
 })
@@ -64,7 +64,7 @@ cusPath.post('/wish-list', (ctx) => {
             throw Error('unauthorized user')
 
         }
-    ctx.body = addOrRemoveItemToWishlist(data)
+    ctx.body = handle_fav_item(data)
     ctx.set('Content-Type', 'Application.json')
     ctx.status = 201;
 
@@ -73,7 +73,7 @@ cusPath.post('/wish-list', (ctx) => {
 cusPath.get('/wish-list/:id', (ctx) => {
 
         const id = ctx.params.id
-    ctx.body = getWishItem(id)
+    ctx.body = get_fav_item(id)
     ctx.set('Content-Type', 'Application.json')
     ctx.status = 200;
 
